@@ -401,6 +401,12 @@ button {
   cursor: pointer;
 }
 
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .typography.body {
   text-align: left;
   line-height: 1.5;

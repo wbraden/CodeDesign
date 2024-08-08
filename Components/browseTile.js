@@ -14,10 +14,10 @@ browseTileTemplate.innerHTML = `
             </div>
             <div class="content">
                 <div class="browse-tile-details">
-                    <p class="typography body md tcp">
+                    <p class="typography body md tcp truncate">
                         <slot name="label"></slot>
                     </p>
-                    <p class="typography body sm tcs">
+                    <p class="typography body sm tcs truncate">
                         <slot name="description"></slot>
                     </p>
                 </div>
