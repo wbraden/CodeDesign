@@ -1,6 +1,6 @@
 const productCardTemplate = document.createElement("template");
     productCardTemplate.innerHTML = `
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <div class="box">
         <img

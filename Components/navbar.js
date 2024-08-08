@@ -1,11 +1,11 @@
 const template = document.createElement('template');
 template.innerHTML = `
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="css/main.css">
 <div class="navbar-container">
     <div class="navbar">
         <div class="navbar-left">
             <button class="menu-button">☰</button>
-            <a href="/index.html"><img src="" alt="Shipt Logo" class="logo"></a>
+            <a href="/"><img src="" alt="Shipt Logo" class="logo"></a>
             <span class="location"></span><img class="icon md" src="/assets/icons/caret-down.svg" alt="Icon description">
         </div>
         <div class="navbar-center">

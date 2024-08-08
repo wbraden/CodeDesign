@@ -1,6 +1,6 @@
 const sectionHeaderTemplate = document.createElement('template');
 sectionHeaderTemplate.innerHTML = `
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="css/main.css">
 <div class="section-header">
     <div class="headline fc">
         <p class="typography headline lg">
