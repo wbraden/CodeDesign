@@ -3,9 +3,9 @@ sectionHeaderTemplate.innerHTML = `
 <link rel="stylesheet" href="css/main.css">
 <div class="section-header">
     <div class="headline fc">
-        <p class="typography headline lg">
+        <h2 class="typography headline lg">
             <slot name="headline"></slot>
-        </p>
+        </h2>
         <p class="typography subheadline lg">
             <slot name="subheadline"></slot>
         </p>
