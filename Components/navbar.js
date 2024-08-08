@@ -6,7 +6,7 @@ template.innerHTML = `
         <div class="navbar-left">
             <button class="menu-button">☰</button>
             <a href="/"><img src="" alt="Shipt Logo" class="logo"></a>
-            <span class="location"></span><img class="icon md" src="/assets/icons/caret-down.svg" alt="Icon description">
+            <span class="location"></span><img class="icon md" src="assets/icons/caret-down.svg" alt="Icon description">
         </div>
         <div class="navbar-center">
             <input type="text" class="search-input" placeholder="What can we help you find?">
@@ -26,7 +26,7 @@ template.innerHTML = `
                 <img src="" alt="Target Logo" class="store-logo">
                 <span class="store-text"></span>
             </div>
-            <img class="icon md" src="/assets/icons/caret-down.svg" alt="Icon description">
+            <img class="icon md" src="assets/icons/caret-down.svg" alt="Icon description">
         </div>
         <a href="#" class="link">Buy Again</a>
         <a href="#" class="link">Deals</a>
