@@ -3,10 +3,11 @@ sectionHeaderTemplate.innerHTML = `
 <link rel="stylesheet" href="css/main.css">
 <div class="section-header">
     <div class="headline fc">
-        <h2 class="typography headline lg">
+        <slot name="header-image"></slot>
+        <h2 class="typography headline lg tcp">
             <slot name="headline"></slot>
         </h2>
-        <p class="typography subheadline lg">
+        <p class="typography subheadline lg tcs">
             <slot name="subheadline"></slot>
         </p>
     </div>

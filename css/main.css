@@ -1,6 +1,4 @@
 :root {
-
-
   /* Spacing */
     --spacing-xxs: 2px;
     --spacing-xs: 4px;
@@ -16,6 +14,8 @@
 /* Base */
   --color-text-primary: #302638;
   --color-text-secondary: #6b6471;
+  --color-text-primary-inverse: #ffffff;
+  --color-text-secondary-inverse: #908d96;
   --color-text-promotion: #c63e15;
   --color-background-primary: #ffffff;
   --color-background-secondary: #f6f5f6;
@@ -28,7 +28,7 @@
 
   /* Red */
   --color-accent-red-bg-subtle: hsl(12, 100%, 95.1%);
-  --color-accent-red-bg-soft: hsl(14.5, 93.5%, 87.8%);
+  --color-accent-red-bg-soft: hsl(13.93deg 75.68% 85.49%);
   --color-accent-red-bg-loud: hsl(349, 63%, 53.7%);
   --color-accent-red-bg-heavy: hsl(347, 83.7%, 22.1%);
   --color-accent-red-content-primary: hsl(344, 90%, 13.3%);
@@ -103,8 +103,8 @@
   --color-accent-neutral-border-loud: hsl(260, 1.26%, 46.9%);
   --color-accent-neutral-border-heavy: hsl(272, 18.7%, 17.8%);
 
-  --color-action: #000000;
-
+  --color-action: #302638;
+  --color-action-inverse: #ffffff;
   --size-max-width: 1880px;
   --gap: 8px;
 
@@ -117,6 +117,23 @@
 }
 
 
+.surface-dark section-header {
+  --color-text-primary: var(--color-text-primary-inverse);
+  }
+.surface-dark  section-header {
+  --color-text-secondary: var(--color-text-secondary-inverse);
+}
+
+.typography.tcp {
+  color: var(--color-text-primary);
+}
+
+.typography.tcs {
+  color: var(--color-text-secondary);
+}
+
+
+
 *,
 *::before,
 *::after {
@@ -127,7 +144,7 @@ body {
   display: block;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   line-height: 1.43;
-  color: var(--color-text-primary);
+  /* color: var(--color-text-primary); */
   background-color: var(--color-background-primary);
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -344,6 +361,10 @@ section {
   container-type: inline-size;
   container-name: section;
 }
+section-header img {
+  max-width: 375px;
+  width: 100%;
+}
 
 .section-header {
   display: flex;
@@ -448,12 +469,10 @@ button {
 
 
 
-.tcp {
-  color: var(--color-text-primary);
-}
 
-.tcs {
-  color: var(--color-text-secondary);
+
+.surface-dark section-header {
+  --color-action: var(--color-action-inverse);
 }
 
 .link {
@@ -647,7 +666,7 @@ button {
     }
     .link {
         margin-right: 2rem;
-        color: #302638;
+        /* color: #302638; */
         text-decoration: none;
         font-size: 1rem;
         cursor: pointer;
@@ -716,19 +735,9 @@ button {
 }
 
 /* Figuring out the colspan in swiper.js */
-
 .swiper-slide {
   height: auto;
 }
-/* .multiwidth .swiper-slide {
-  flex-shrink: 0;
-  width: auto;
-}
-
-.swiper-slide.span-two-columns {
-  width: calc(200% + 8px); 
-} */
-
 
 /* THROWAWAY */
 .spacehelper {
