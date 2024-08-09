@@ -12,7 +12,7 @@ sectionHeaderTemplate.innerHTML = `
         </p>
     </div>
     <div class="right-slot fr">
-        <div class="link">See more &rsaquo;</div>
+        <div class="link">Explore more  &nbsp;&rsaquo;</div>
         <slot name="prev-button"></slot>
         <slot name="next-button"></slot>
     </div>
