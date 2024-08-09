@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root {
   /* Spacing */
     --spacing-xxs: 2px;
@@ -133,6 +182,56 @@
 }
 
 
+.typography.body {
+  text-align: left;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.typography.body.md {
+  font-size: 14px;
+}
+
+.typography.body.sm {
+  font-size: 12px;
+}
+
+.typography.headline,
+.typography.subheadline.lg {
+  margin: 0;
+  font-weight: 700;
+}
+.typography.headline.xl {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.typography.headline.lg {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.typography.subheadline.lg {
+  font-size: 14px;
+  font-weight: 300;
+}
+@media (min-width: 1280px) {
+  .typography.headline.xl {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .typography.headline.lg {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .typography.subheadline.lg {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+
 
 *,
 *::before,
@@ -195,6 +294,16 @@ body {
 
 .box.col-span-4 {
   grid-column: span 4;
+}
+
+/* Product Card */
+.box .product-content,
+.box .product-details {
+    flex:1;
+}
+.typography.product-price {
+  font-weight: 700;
+  margin-top: 8px;
 }
 
 /* Merch Card */
@@ -266,7 +375,7 @@ body {
   width: 100%;
   max-width: none;
   margin: 0 auto;
-  padding: 1rem; /* Mobile padding */
+  padding: 0 1rem; /* Mobile padding */
 }
 
 /* Large Mobile */
@@ -424,55 +533,6 @@ button {
   text-overflow: ellipsis;
 }
 
-.typography.body {
-  text-align: left;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.typography.body.md {
-  font-size: 14px;
-}
-
-.typography.body.sm {
-  font-size: 12px;
-}
-
-.typography.headline,
-.typography.subheadline.lg {
-  margin: 0;
-  font-weight: 700;
-}
-.typography.headline.xl {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.typography.headline.lg {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.typography.subheadline.lg {
-  font-size: 14px;
-  font-weight: 300;
-}
-@media (min-width: 1280px) {
-  .typography.headline.xl {
-    font-size: 32px;
-    font-weight: 700;
-  }
-  .typography.headline.lg {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  
-  .typography.subheadline.lg {
-    font-size: 16px;
-    font-weight: 300;
-  }
-}
-
 
 
 
@@ -519,7 +579,7 @@ button {
     .navbar-center {
       -webkit-box-flex: 1;
       flex: 1;
-      min-width: 280px;
+      /* min-width: 280px; */
       margin-right: 12px;
       padding: 0 2rem;
     }
@@ -640,7 +700,8 @@ button {
     .navbar-links {
         display: flex;
         align-items: center;
-        padding: 1rem 0;      
+        padding: 1rem 0;  
+        overflow: hidden;    
 
     }
     
@@ -676,6 +737,7 @@ button {
         text-decoration: none;
         font-size: 1rem;
         cursor: pointer;
+        white-space: nowrap;
     }
 
     .navbar-links  .link:hover {
@@ -798,3 +860,36 @@ button {
     display: block;
   }   
 }
+
+
+
+/* FIX Mobile container  */
+@media (min-width: 480px) and (max-width: 767px) {
+  .section-header {
+    padding:0 1rem;
+  }
+  section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .swiper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } 
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .section-header {
+    padding:0 1rem;
+  }
+  section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .swiper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }   
+}
+
+

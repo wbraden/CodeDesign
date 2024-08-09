@@ -8,7 +8,7 @@ const productCardTemplate = document.createElement("template");
             alt=""
             class="product-image"
         />
-        <div class="content">
+        <div class="content product-content">
             <div class="product-details">
                 <p class="typography body md tcp">
                     <slot name="productName" />
@@ -24,7 +24,7 @@ const productCardTemplate = document.createElement("template");
                 </p>
             </div>
             <div class="product-footer">
-                <p class="typography body md tcp">
+                <p class="typography body md tcp product-price">
                     <slot name="price" />
                 </p>
             </div>
