@@ -865,13 +865,14 @@
       document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".wb-swiper-1", {
           slidesPerView: 1.1,
+          freemode: true,
           spaceBetween: 8,
           breakpoints: {
-            480: { slidesPerView: 3.25, slidesPerGroup: 3 },
-            768: { slidesPerView: 5.25, slidesPerGroup: 5 },
-            1280: { slidesPerView: 6, slidesPerGroup: 6 },
-            1440: { slidesPerView: 7, slidesPerGroup: 7 },
-            1880: { slidesPerView: 8, slidesPerGroup: 8 },
+            480: {freemode: true, slidesPerView: 3.25, slidesPerGroup: 3 },
+            768: {freemode: true, slidesPerView: 5.25, slidesPerGroup: 5 },
+            1280: {freemode: false, slidesPerView: 6, slidesPerGroup: 6 },
+            1440: { freemode: false,slidesPerView: 7, slidesPerGroup: 7 },
+            1880: { freemode: false,slidesPerView: 8, slidesPerGroup: 8 },
           },
           navigation: { nextEl: ".wb-next-1", prevEl: ".wb-prev-1" },
         });
@@ -881,13 +882,14 @@
       document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".wb-swiper-2", {
           slidesPerView: 1,
+          freemode: true,
           spaceBetween: 8,
           breakpoints: {
-            480: { slidesPerView: 3.25, slidesPerGroup: 3 },
-            768: { slidesPerView: 5, slidesPerGroup: 5 },
-            1280: { slidesPerView: 6, slidesPerGroup: 6 },
-            1440: { slidesPerView: 7, slidesPerGroup: 7 },
-            1880: { slidesPerView: 8, slidesPerGroup: 8 },
+            480: {freemode: true, slidesPerView: 3.25, slidesPerGroup: 3 },
+            768: {freemode: true, slidesPerView: 5, slidesPerGroup: 5 },
+            1280: {freemode: false, slidesPerView: 6, slidesPerGroup: 6 },
+            1440: { freemode: false,slidesPerView: 7, slidesPerGroup: 7 },
+            1880: { freemode: false,slidesPerView: 8, slidesPerGroup: 8 },
           },
           navigation: { nextEl: ".wb-next-2", prevEl: ".wb-prev-2" },
         });
@@ -896,13 +898,14 @@
       document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".wb-swiper-4", {
           slidesPerView: 1.1,
+          freemode: true,
           spaceBetween: 8,
           breakpoints: {
-            480: { slidesPerView: 1.1, slidesPerGroup: 1.5 },
-            768: { slidesPerView: 2.25, slidesPerGroup: 2.25 },
-            1280: { slidesPerView: 3, slidesPerGroup: 3 },
-            1440: { slidesPerView: 4, slidesPerGroup: 4 },
-            1880: { slidesPerView: 4, slidesPerGroup: 4 },
+            480: {freemode: true, slidesPerView: 1.1, slidesPerGroup: 1.5 },
+            768: {freemode: true, slidesPerView: 2.25, slidesPerGroup: 2.25 },
+            1280: {freemode: false, slidesPerView: 3, slidesPerGroup: 3 },
+            1440: { freemode: false,slidesPerView: 4, slidesPerGroup: 4 },
+            1880: { freemode: false,slidesPerView: 4, slidesPerGroup: 4 },
           },
           navigation: { nextEl: ".wb-next-4", prevEl: ".wb-prev-4" },
         });
@@ -911,11 +914,12 @@
       // COL SPAN
       document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".wb-swiper-5", {
-          slidesPerView: "2", // Automatically adjusts slide width
+          slidesPerView: 2, 
           spaceBetween: 8,
+          freemode: true,
           breakpoints: {
-            480: { slidesPerView: 3, slidesPerGroup: 3 },
-            768: { slidesPerView: 5, slidesPerGroup: 5 },
+            480: {freemode: true, slidesPerView: 3, slidesPerGroup: 3 },
+            768: {freemode: true, slidesPerView: 5, slidesPerGroup: 5 },
             1280: { slidesPerView: 6, slidesPerGroup: 6 },
             1440: { slidesPerView: 6, slidesPerGroup: 7 },
             1880: { slidesPerView: 8, slidesPerGroup: 8 },
@@ -957,5 +961,6 @@
         }px))`;
       });
     </script>
+    <span>ver 1</span>
   </body>
 </html>
