@@ -27,40 +27,42 @@ browseTileTemplate.innerHTML = `
 `;
 
 class BrowseTile extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({mode: 'open'});
-        this.shadowRoot.appendChild(browseTileTemplate.content.cloneNode(true));
-    }
-    
-    connectedCallback() {
-        if(this.getAttribute('image')) {
-             this.shadowRoot.querySelector('.browse-tile-image').src = this.getAttribute('image');
-        }
-        if(this.getAttribute('link')) {
-             this.shadowRoot.querySelector('.browse-tile-link').href = this.getAttribute('link');
-        }
-        this.setAspectRatio();
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(browseTileTemplate.content.cloneNode(true));
+  }
 
-    setAspectRatio() {
-        const aspect = this.getAttribute('aspect') || '16-9';
-        const mediaElement = this.shadowRoot.querySelector('.media');
-        mediaElement.classList.remove('ar169', 'ar43', 'ar11');
-        
-        switch(aspect) {
-            case '4-3':
-                mediaElement.classList.add('ar43');
-                break;
-            case '1-1':
-                mediaElement.classList.add('ar11');
-                break;
-            case '16-9':
-            default:
-                mediaElement.classList.add('ar169');
-                break;
-        }
+  connectedCallback() {
+    if (this.getAttribute("image")) {
+      this.shadowRoot.querySelector(".browse-tile-image").src =
+        this.getAttribute("image");
     }
+    if (this.getAttribute("link")) {
+      this.shadowRoot.querySelector(".browse-tile-link").href =
+        this.getAttribute("link");
+    }
+    this.setAspectRatio();
+  }
+
+  setAspectRatio() {
+    const aspect = this.getAttribute("aspect") || "16-9";
+    const mediaElement = this.shadowRoot.querySelector(".media");
+    mediaElement.classList.remove("ar169", "ar43", "ar11");
+
+    switch (aspect) {
+      case "4-3":
+        mediaElement.classList.add("ar43");
+        break;
+      case "1-1":
+        mediaElement.classList.add("ar11");
+        break;
+      case "16-9":
+      default:
+        mediaElement.classList.add("ar169");
+        break;
+    }
+  }
 }
 
-window.customElements.define('browse-tile', BrowseTile);
+window.customElements.define("browse-tile", BrowseTile);

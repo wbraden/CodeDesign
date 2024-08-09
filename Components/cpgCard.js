@@ -1,5 +1,5 @@
 const cpgCardTemplate = document.createElement("template");
-    cpgCardTemplate.innerHTML = `
+cpgCardTemplate.innerHTML = `
     <link rel="stylesheet" href="css/main.css">
 
     <div class="box cpg-card ">       
@@ -25,17 +25,16 @@ const cpgCardTemplate = document.createElement("template");
 `;
 
 class cpgCard extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({mode: 'open'})
-        this.shadowRoot.appendChild(cpgCardTemplate.content.cloneNode(true));
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(cpgCardTemplate.content.cloneNode(true));
+  }
+  connectedCallback() {
+    if (this.getAttribute("image")) {
+      this.shadowRoot.querySelector(".image").src = this.getAttribute("image");
     }
-    connectedCallback() {
-        if(this.getAttribute('image')) {
-             this.shadowRoot.querySelector('.image').src = this.getAttribute('image');
-        }
-       
-       }
+  }
 }
 
-window.customElements.define('cpg-card', cpgCard)        
+window.customElements.define("cpg-card", cpgCard);

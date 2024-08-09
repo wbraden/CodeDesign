@@ -1,4 +1,4 @@
-const template = document.createElement('template');
+const template = document.createElement("template");
 template.innerHTML = `
 <link rel="stylesheet" href="css/main.css">
 <div class="navbar-container">
@@ -45,21 +45,27 @@ template.innerHTML = `
 `;
 
 class CustomNavbar extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+  }
 
-    connectedCallback() {
-        this.shadowRoot.querySelector('.logo').src = this.getAttribute('logo-src');
-        this.shadowRoot.querySelector('.logo').alt = this.getAttribute('logo-alt') || 'Shipt Logo';
-        this.shadowRoot.querySelector('.location').textContent = this.getAttribute('location') || '201 3rd St 94132 ⬇️';
-        this.shadowRoot.querySelector('.store-logo').src = this.getAttribute('store-logo-src');
-        this.shadowRoot.querySelector('.store-logo').alt = this.getAttribute('store-logo-alt') || 'Store Logo';
-        this.shadowRoot.querySelector('.store-text').textContent = this.getAttribute('store-text') || 'Store ⬇️';
-        this.shadowRoot.querySelector('.cart-count').textContent = this.getAttribute('cart-count') || '21';
-    }
+  connectedCallback() {
+    this.shadowRoot.querySelector(".logo").src = this.getAttribute("logo-src");
+    this.shadowRoot.querySelector(".logo").alt =
+      this.getAttribute("logo-alt") || "Shipt Logo";
+    this.shadowRoot.querySelector(".location").textContent =
+      this.getAttribute("location") || "201 3rd St 94132 ⬇️";
+    this.shadowRoot.querySelector(".store-logo").src =
+      this.getAttribute("store-logo-src");
+    this.shadowRoot.querySelector(".store-logo").alt =
+      this.getAttribute("store-logo-alt") || "Store Logo";
+    this.shadowRoot.querySelector(".store-text").textContent =
+      this.getAttribute("store-text") || "Store ⬇️";
+    this.shadowRoot.querySelector(".cart-count").textContent =
+      this.getAttribute("cart-count") || "21";
+  }
 }
 
-window.customElements.define('custom-navbar', CustomNavbar);
+window.customElements.define("custom-navbar", CustomNavbar);
