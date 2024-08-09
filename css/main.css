@@ -601,7 +601,7 @@ button {
         justify-content: space-between;
       }
       
-      .box .content {
+      .cpg-card.box .content {
         flex-direction: row;
       }
       .cpg-card .image {
@@ -715,10 +715,54 @@ button {
   aspect-ratio: var(--aspect_ratio_wrapper-ratio, unset);
 }
 
+/* Figuring out the colspan in swiper.js */
 
+
+/* .multiwidth .swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+}
+
+.swiper-slide.span-two-columns {
+  width: calc(200% + 8px); 
+} */
 
 
 /* THROWAWAY */
 .spacehelper {
   height: 1000px;
+}
+
+.breakpoint span {
+  display: none;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .breakpoint span.bp-480 {
+    display: block;
+  }   
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .breakpoint span.bp-768 {
+    display: block;
+  }      
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .breakpoint span.bp-1280 {
+    display: block;
+  }   
+}
+
+@media (min-width: 1440px) and (max-width: 1880px) {
+  .breakpoint span.bp-1440 {
+    display: block;
+  }   
+}
+
+@media (min-width: 1880px) {
+  .breakpoint span.bp-1880 {
+    display: block;
+  }   
 }

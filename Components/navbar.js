@@ -32,6 +32,14 @@ template.innerHTML = `
         <a href="#" class="link">Deals</a>
         <a href="#" class="link">Explore</a>
         <a href="#" class="link">My Lists</a>
+        <a href="#" class="link breakpoint">
+        <span class="bp-480">480+</span>
+        <span class="bp-768">768+</span>
+        <span class="bp-1280">1280+</span>
+        <span class="bp-1440">1440+</span>
+        <span class="bp-1880">1880+</span></a>
+       
+
     </div>
 </div>
 `;
