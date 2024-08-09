@@ -453,7 +453,7 @@ img.avatar {
   height: 400px; /* Adjust this height as needed */
   position: relative;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .retail-banner {    
     height: 200px; /* Adjust this height as needed */    
   }
@@ -864,7 +864,7 @@ button {
 
 
 /* FIX Mobile container  */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .section-header {
     padding:0 1rem;
   }
