@@ -2,8 +2,10 @@ const template = document.createElement("template");
 template.innerHTML = `
 <link rel="stylesheet" href="css/main.css">
 <div class="navbar-container">
-    <div class="navbar">
-        <div class="navbar-left">
+<div class="container">    
+<div class="navbar">
+        
+            <div class="navbar-left">
             <button class="menu-button">☰</button>
             <a href="./"><img src="" alt="Shipt Logo" class="logo"></a>
             <span class="location"></span><img class="icon md" src="assets/icons/caret-down.svg" alt="Icon description">
@@ -18,10 +20,12 @@ template.innerHTML = `
                 <span class="cart-count">21</span>
             </div>
         </div>
+        </div>
     </div>
-
+<div class="container">
     <div class="navbar-links">
-        <div class="navbar-link">
+        
+            <div class="navbar-link">
             <div class="store-group">
                 <img src="" alt="Target Logo" class="store-logo">
                 <span class="store-text"></span>
@@ -39,6 +43,7 @@ template.innerHTML = `
         <span class="bp-1440">1440+</span>
         <span class="bp-1880">1880+</span></a>
        
+        </div>
 
     </div>
 </div>
@@ -52,7 +57,7 @@ class CustomNavbar extends HTMLElement {
   }
 
   connectedCallback() {
-    this.shadowRoot.querySelector(".logo").src = this.getAttribute("logo-src");
+    this.shadowRoot.querySelector(".logo").src = this.getAttribute("logo-src") || "https://object-storage.shipt.com/webassets/headerLogo-new.svg?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256";
     this.shadowRoot.querySelector(".logo").alt =
       this.getAttribute("logo-alt") || "Shipt Logo";
     this.shadowRoot.querySelector(".location").textContent =
