@@ -717,7 +717,9 @@ button {
 
 /* Figuring out the colspan in swiper.js */
 
-
+.swiper-slide {
+  height: auto;
+}
 /* .multiwidth .swiper-slide {
   flex-shrink: 0;
   width: auto;

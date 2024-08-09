@@ -495,7 +495,7 @@
     <div class="container">
         <div class="swiper wb-swiper-5">
             <section-header alt="Target" display-type="image">
-                <span slot="headline">Stores near you</span>
+                <span slot="headline">Headline</span>
                 <button class="icon-button wb-prev-5" slot="prev-button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2852 4.38128C12.6269 4.72299 12.6269 5.27701 12.2852 5.61872L7.90394 10L12.2852 14.3813C12.6269 14.723 12.6269 15.277 12.2852 15.6187C11.9435 15.9604 11.3895 15.9604 11.0478 15.6187L6.04779 10.6187C5.70608 10.277 5.70608 9.72299 6.04779 9.38128L11.0478 4.38128C11.3895 4.03957 11.9435 4.03957 12.2852 4.38128Z" fill="#302638"/>
@@ -511,7 +511,7 @@
             <div class="swiper-wrapper multiwidth">                                    
                 <div class="swiper-slide span-two-columns">
                     <div class="box merch-card" style="height:100%;background-image: url(https://object-storage.shipt.com/ad-products/ChobaniBTSShipt1x1_8e4f9af604bc6722a5653fe0a07eadc5.png?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=384);">
-                    test
+                    <!-- test -->
                     </div>
                 </div>
                 <!-- Repeat browse-tile elements for more slides -->
@@ -693,16 +693,17 @@
          // COL SPAN
          document.addEventListener("DOMContentLoaded", function() {
             var swiper = new Swiper(".wb-swiper-5", {
-                slidesPerView: 'auto', // Automatically adjusts slide width
+                slidesPerView: '3', // Automatically adjusts slide width
                 spaceBetween: 8,
                 breakpoints: {
-                    480: { slidesPerView: 3.25, slidesPerGroup: 3 },
+                    480: { slidesPerView: 3, slidesPerGroup: 3 },
                     768: { slidesPerView: 5, slidesPerGroup: 5 },
                     1280: { slidesPerView: 6, slidesPerGroup: 6 },
                     1440: { slidesPerView: 7, slidesPerGroup: 7 },
                     1880: { slidesPerView: 8, slidesPerGroup: 8 },
                 },
                 navigation: { nextEl: ".wb-next-5", prevEl: ".wb-prev-5" },
+                // Enables a slide to span columns
                 on: {
                     init: function() {
                         applyCustomWidths(this);
@@ -712,6 +713,8 @@
                     },
                 },
             });    
+
+            // Enables a slide to span columns
             function applyCustomWidths(swiperInstance) {
                 const breakpoint = swiperInstance.activeBreakpoint || swiperInstance.currentBreakpoint;
                 const settings = swiperInstance.params.breakpoints[breakpoint];
@@ -724,42 +727,7 @@
             }
         });
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          // Array of CSS variables for soft background colors
-          const colorVars = [
-            "--color-accent-red-bg-soft",
-            "--color-accent-orange-bg-soft",
-            "--color-accent-yellow-bg-soft",
-            "--color-accent-green-bg-soft",
-            "--color-accent-blue-bg-soft",
-            "--color-accent-purple-bg-soft",
-            "--color-accent-neutral-bg-soft",
-          ];
-      
-          // Function to get a random element from an array
-          function getRandomElement(arr) {
-            return arr[Math.floor(Math.random() * arr.length)];
-          }
-      
-          // Function to change the background color of elements
-          function changeColors() {
-            const shapes = document.querySelectorAll(".colorize");
-            shapes.forEach(function (shape) {
-              const randomColorVar = getRandomElement(colorVars);
-              shape.style.backgroundColor = getComputedStyle(document.documentElement)
-                .getPropertyValue(randomColorVar)
-                .trim();
-            });
-          }
-      
-          // Initial color change
-          changeColors();
-      
-          // Change colors every 2 seconds (2000 milliseconds)
-          setInterval(changeColors, 2000);
-        });
-      </script>
+   
       <script>
         // Parallax for retailer banner
         window.addEventListener('scroll', function() {
