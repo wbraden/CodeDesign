@@ -470,9 +470,13 @@ img.avatar {
 
 section {
   width: 100%;
-  padding: 2rem 0;
+  padding: 0;
+  padding-bottom: 2rem;
   container-type: inline-size;
   container-name: section;
+}
+section.has-background {
+  padding: 2rem 0;
 }
 section-header img {
   max-width: 375px;
@@ -879,7 +883,7 @@ button {
   .pagination {
     display:none;
   }
-  h1 {
-    margin-top: 1rem !important;
+  .greetings {
+    margin: 1rem 0;
   }
 }
