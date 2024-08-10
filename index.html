@@ -13,11 +13,11 @@
         location="201 3rd St 94132"        
         cart-count="21"
     ></custom-navbar>
- <section style="padding-bottom: 0;">
+ 
     <div class="container">
         <h1 class="typography headline xl">Good morning, Amanda</h1>
     </div>
- </section>
+ 
 
  <section>
     <div class="container">
@@ -345,9 +345,10 @@
     <script src="Components/navbar.js"></script>
     
     <script>
+        // stores
         document.addEventListener("DOMContentLoaded", function() {
             var swiper1 = new Swiper(".wb-swiper-1", {
-                slidesPerView: 1,
+                slidesPerView: 3.25,
                 spaceBetween: 8,
                 breakpoints: {
                     480: { slidesPerView: 3.25, slidesPerGroup: 3 },
@@ -359,9 +360,10 @@
                 navigation: { nextEl: ".wb-next-1", prevEl: ".wb-prev-1" },
             });    
         });
+        // products
         document.addEventListener("DOMContentLoaded", function() {
             var swiper1 = new Swiper(".wb-swiper-2", {
-                slidesPerView: 1,
+                slidesPerView: 2.1,
                 spaceBetween: 8,
                 breakpoints: {
                     480: { slidesPerView: 3.25, slidesPerGroup: 3 },
@@ -373,9 +375,10 @@
                 navigation: { nextEl: ".wb-next-2", prevEl: ".wb-prev-2" },
             });    
         });
+        // categories
         document.addEventListener("DOMContentLoaded", function() {
             var swiper1 = new Swiper(".wb-swiper-3", {
-                slidesPerView: 1,
+                slidesPerView: 2.1,
                 spaceBetween: 8,
                 breakpoints: {
                     480: { slidesPerView: 2.25, slidesPerGroup: 3 },

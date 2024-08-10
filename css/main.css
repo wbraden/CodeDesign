@@ -866,7 +866,7 @@ button {
 /* FIX Mobile container  */
 @media (min-width: 0px) and (max-width: 1279px) {
   .section-header {
-    padding:0 1rem;
+    /* padding:0 1rem; */
   }
   section .container {
     padding-left: 0;
@@ -878,5 +878,8 @@ button {
   } 
   .pagination {
     display:none;
+  }
+  h1 {
+    margin-top: 1rem !important;
   }
 }
