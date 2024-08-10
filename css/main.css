@@ -452,6 +452,7 @@ img.avatar {
   overflow: hidden;
   height: 400px; /* Adjust this height as needed */
   position: relative;
+  margin-bottom: 2rem;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   .retail-banner {    
@@ -904,5 +905,8 @@ button {
     background-color: var(--cpg-card-background-color, white); /* Default to white if not defined */
     border-color: var(--cpg-card-background-color, white); /* Default to white if not defined */
     color: var(--cpg-card-content-color, #000000);
+  }
+  .navbar-container {
+    display: none;
   }
 }
