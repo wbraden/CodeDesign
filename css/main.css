@@ -891,12 +891,18 @@ button {
   .browse-tile:hover .overlay {
     background:none;
   }
-  /* .browse-tile:active .overlay {
-    background:none;
-  } */
+    /* .browse-tile:active .overlay {
+      background:none;
+    } */
 
   .box:hover {
     background-color: var(--color-background-primary);
     border: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  .cpg-card:hover {
+    background-color: var(--cpg-card-background-color, white); /* Default to white if not defined */
+    border-color: var(--cpg-card-background-color, white); /* Default to white if not defined */
+    color: var(--cpg-card-content-color, #000000);
   }
 }
