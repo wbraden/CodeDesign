@@ -477,6 +477,7 @@ section {
 }
 section.has-background {
   padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 section-header img {
   max-width: 375px;
