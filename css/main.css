@@ -887,4 +887,16 @@ button {
   .greetings {
     margin: 1rem 0;
   }
+
+  .browse-tile:hover .overlay {
+    background:none;
+  }
+  /* .browse-tile:active .overlay {
+    background:none;
+  } */
+
+  .box:hover {
+    background-color: var(--color-background-primary);
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
 }
