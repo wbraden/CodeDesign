@@ -76,9 +76,9 @@
                 </button>
             </section-header>
 
-            <div class="swiper-wrapper" id="Snacks">
+            <div class="swiper-wrapper" id="Snacks"> -->
                 <!-- Slides will be dynamically inserted here -->
-            </div>
+            <!-- </div>
         </div>
     </div>
 </section> -->
@@ -106,7 +106,7 @@
     }
 
     // Fetch the JSON file and generate the carousel
-    fetch('/data/household.json')
+    fetch('data/household.json')
         .then(response => response.json())
         .then(products => {
             const productCarousel = document.getElementById('productCarousel');
@@ -172,7 +172,7 @@
 }
 
     // Fetch the JSON file and generate the carousel
-    fetch('/data/beverages.json')
+    fetch('data/beverages.json')
         .then(response => response.json())
         .then(products => {
             const productCarousel = document.getElementById('Beverages');
@@ -246,7 +246,7 @@
 }
 
     // Fetch the JSON file and generate the carousel
-    fetch('/data/snacks.json')
+    fetch('data/snacks.json')
         .then(response => response.json())
         .then(products => {
             const productCarousel = document.getElementById('Snacks');
