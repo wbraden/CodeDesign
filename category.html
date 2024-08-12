@@ -8,7 +8,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body class="theme--red">
+  <body class="theme--blue retailer">
     <custom-navbar
       logo-src="https://object-storage.shipt.com/web/assets/headerLogo-new.svg?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
       logo-alt="Shipt"
@@ -18,12 +18,18 @@
       store-text="Target"
       cart-count="21"
     ></custom-navbar>
-    <div class="retail-banner">
+    <!-- <div class="retail-banner">
       <img
         src="assets/target-banner.png"
         alt="Retail Banner"
         class="parallax-image"
       />
+    </div> -->
+
+    <div class="category-banner" style="background-color: #C9E2FF;margin-bottom: 2rem;">
+      <div class="container" style="display: flex;">
+        <img src="assets/cat-lp-header-pets.png" alt="">
+      </div>
     </div>
 
     <!-- CPG -->
@@ -284,17 +290,15 @@
     </section>
 
     <!-- Image header and color bg -->
-    <section class="colorize-red has-background">
+    <section class="colorize-blue has-background">
       <div class="container">
         <div class="swiper wb-swiper-5">
           <section-header alt="Target" display-type="image">
-            <span slot="header-image"
-              ><img src="assets/keepin-it-smoothie.png" alt=""
-            /></span>
-            <span slot="subheadline"
+            
+            <!-- <span slot="subheadline"
               >All the ingredients to create a soothing smoothie on this hot,
               hot, hot day.</span
-            >
+            > -->
             <button class="icon-button wb-prev-5 pagination" slot="prev-button">
               <svg
                 width="20"
@@ -331,68 +335,73 @@
 
           <div class="swiper-wrapper multiwidth">
             <!-- Repeat browse-tile elements for more slides -->
+            
+              <div class="swiper-slide span-two-columns">
+                <div
+                  class="box merch-card"
+                  style="
+                    height: 100%;
+                    background-color: transparent;
+                    background-image: url(assets/kitty-merch-card.png);
+                  "
+                >
+                  <!-- test -->
+                </div>
+              </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/13208903-27/thumb_fbb9c8e09adc5d83584bd22535c3b7c3.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              ><span slot="productMessaging">Buy again</span>
-                <span slot="productName">Strawberries - 1lb</span>
-                <span slot="line2">1 lb</span>
-                <span slot="line3">EBT eligible</span>
-                <span slot="price">$2.79</span>
-                <span slot="priceOriginal">$4.99</span>
-                <span slot="productPricePercentOff">20% off</span>
-              </product-card>
+              image="https://target.scene7.com/is/image/Target/GUEST_880b1aeb-6e9f-42b4-8e37-348e54813aca?wid=1200&hei=1200&qlt=80&fmt=webp"
+            >
+            <span slot="productMessaging">Buy again</span>
+              <span slot="productName">Quirky Jiggling Jellyfish Wand</span>
+              <span slot="line2">1 ct</span>            
+              <span slot="price">$5.79</span>
+              <span slot="priceOriginal">$6.99</span>
+              <span slot="productPricePercentOff">20% off</span>
+            </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/78362088-27/thumb_d6bba52e27d6cc7d7d5bceda9f2e95cd.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="https://target.scene7.com/is/image/Target/GUEST_fc448a19-5168-49de-831b-ad9525d7872f?qlt=65&fmt=webp&hei=350&wid=350"
               >                
                 <span slot="productName"
-                  >Greek Vanilla Nonfat Yogurt - 32oz - Good & Gather™</span
+                  >Quirky Kitty hard Seltzpurr Cat Toy - 2pk</span
                 >
-                <span slot="line2">32 oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$3.69</span>
+                <span slot="line2">1 ct</span>              
+                <span slot="price">$3.81</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14936366-27/thumb_d07dd84e-7a43-49f2-b2d1-d2fec2692e83.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-              <span slot="productMessaging">Buy again</span>
+                image="https://target.scene7.com/is/image/Target/GUEST_d9734ee3-3f14-4a3e-8597-ff80584f432d?wid=1200&hei=1200&qlt=80&fmt=webp"
+              >              
                 <span slot="productName"
-                  >Silk Vanilla Almond Milk - 0.5gal</span
+                  >Unique Bargains Square Paper Bag with Handle Bouquet Packaging Gift Bag for Party Favor Brown 8''x8''x8'' 10 Pcs</span
                 >
-                <span slot="line2">1/2 gal </span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$4.69</span>
+                <span slot="line2">10 ct</span>                
+                <span slot="price">$33.69</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/13183052-27/thumb_8be33e94-7007-46b8-9e75-d032ff117751.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="https://target.scene7.com/is/image/Target/GUEST_e158be89-857e-40c2-a160-51a269d2223b?qlt=65&fmt=webp&hei=350&wid=350"
               >
                 <span slot="productName"
-                  >Simply Beverages Simply Orange Pulp Free Juice - 52 fl
-                  oz</span
+                  >Checkered Sofa Cat Scratcher - 17.7" - Boots & Barkley™</span
                 >
-                <span slot="line2">52 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
-                <span slot="price">$5.99</span>
+                <span slot="price">$8.99</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/85759852-27/thumb_1d302d36-cd40-4147-994a-a5fac6f0044b.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >Organic Bananas - 2lb - Good & Gather™</span
+                  >Product Name</span
                 >
-                <span slot="line2">2 lb</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
@@ -400,69 +409,69 @@
 
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/54555987-27/thumb_67a8c0f8-660d-4177-ab05-dfe5aca0a825.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >Chopped Kale - 16oz - Good & Gather™</span
+                  >Product Name</span
                 >
-                <span slot="line2">16 oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
+
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
+
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
+
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
+
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
+
           </div>
         </div>
       </div>
@@ -473,7 +482,7 @@
       <div class="container">
         <div class="swiper wb-swiper-2">
           <section-header>
-            <span slot="headline">La Croy</span>
+            <span slot="headline">Products</span>
             <span slot="subheadline">Good stuff</span>
             <button class="icon-button wb-prev-2 pagination" slot="prev-button">
               <svg
@@ -512,13 +521,12 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
@@ -526,465 +534,122 @@
             <!-- Repeat browse-tile elements for more slides -->
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="swiper wb-swiper-2">
-          <section-header>
-            <span slot="headline">Household Essentials</span>
-            <span slot="subheadline">Daily essentials for your home</span>
-            <button class="icon-button wb-prev-2 pagination" slot="prev-button">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.2852 4.38128C12.6269 4.72299 12.6269 5.27701 12.2852 5.61872L7.90394 10L12.2852 14.3813C12.6269 14.723 12.6269 15.277 12.2852 15.6187C11.9435 15.9604 11.3895 15.9604 11.0478 15.6187L6.04779 10.6187C5.70608 10.277 5.70608 9.72299 6.04779 9.38128L11.0478 4.38128C11.3895 4.03957 11.9435 4.03957 12.2852 4.38128Z"
-                  fill="#302638"
-                />
-              </svg>
-            </button>
-            <button class="icon-button wb-next-2 pagination" slot="next-button">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.71478 4.38128C7.37307 4.72299 7.37307 5.27701 7.71478 5.61872L12.0961 10L7.71478 14.3813C7.37307 14.723 7.37307 15.277 7.71478 15.6187C8.05649 15.9604 8.61051 15.9604 8.95221 15.6187L13.9522 10.6187C14.2939 10.277 14.2939 9.72299 13.9522 9.38128L8.95221 4.38128C8.61051 4.03957 8.05649 4.03957 7.71478 4.38128Z"
-                  fill="#302638"
-                />
-              </svg>
-            </button>
-          </section-header>
-
-          <div class="swiper-wrapper">
-            <!-- Repeat for each product -->
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/25f2b88a-0cd9-3740-b8c8-7b210adc5dc6/thumb_c9aed3aff067c258c1786a60ece28935.webp"
-              >
-                <span slot="productName"
-                  >Dixie Heavy Duty Everyday Paper Plates</span
-                >
-                <span slot="line2">48 ct; 8.5 in</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/3503f844-bb51-c5c9-93c2-521aaae82214/thumb_4d7a53b77e0ed79d7b11aa2cef3fb4ee.webp"
-              >
-                <span slot="productName">Reynolds Wrap Aluminum Foil</span>
-                <span slot="line2">75 sq ft</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/b376e208-c7e3-6eff-c8b4-e611f5e5ad25/thumb_b7cd81432cea3d50f846bb1aa29ae6cf.webp"
-              >
-                <span slot="productName"
-                  >Clorox Citrus Lemon Disinfecting Wipes</span
-                >
-                <span slot="line2">75 ct</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/9bee3ab4-23dd-2e8d-5e1f-7b63923b3efa/thumb_e00fc0bb0ec34dd0707766e276f76d36.webp"
-              >
-                <span slot="productName"
-                  >Lysol Crisp Linen Disinfectant Spray</span
-                >
-                <span slot="line2">12.5 oz</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/0636be42-a4b1-e5a0-8504-61c2010261e8/thumb_b813c37e0879ebf9b37c1bec5c3f801a.webp"
-              >
-                <span slot="productName"
-                  >Ziploc Freezer Bags Double Zipper Gallon Value Pack</span
-                >
-                <span slot="line2">28 ct</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/00de3e51-c319-497b-2569-dcc0fc6d4c20/thumb_4632acde8716eaf0ffc828de5c7c713b.webp"
-              >
-                <span slot="productName"
-                  >Lysol Disinfecting Wipes Lemon & Lime Blossom Scent</span
-                >
-                <span slot="line2">80 ct</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/0aae3c3f-30f6-9c43-a907-a6073e2072f7/thumb_cfdbd5d45072a4e6a22aeeb5c41cbd87.webp"
-              >
-                <span slot="productName"
-                  >Ziploc Gallon Storage Seal Top Bags</span
-                >
-                <span slot="line2">38 ct</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/12633b42-bc6f-f62f-37d9-66654bb0d69b/thumb_fad01f9c246ee1fa51e55bd385f41a08.webp"
-              >
-                <span slot="productName"
-                  >Lysol Lemon & Lime Blossom Scent Disinfecting Wipes</span
-                >
-                <span slot="line2">35 ct</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/6378d61d-6cd3-265f-7c34-13410a8dddab/thumb_de013a0863c5cc3403ed7e8f10002058.webp"
-              >
-                <span slot="productName"
-                  >Clorox Disinfecting Wipes On The Go Fresh Scent</span
-                >
-                <span slot="line2">9 ct</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/0d88c6a6-ed5e-0c21-45da-7c6b78094bd1/thumb_06e79104f4ca24b5d21daf758b613153.webp"
-              >
-                <span slot="productName">Vanity Fair All Occasion Napkins</span>
-                <span slot="line2">100 ct</span>
-              </product-card>
-            </div>
-            <!-- Continue adding swiper-slide blocks for each product... -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Image BG -->
-    <section
-      class="surface-dark has-background"
-      style="background-image: url(assets/grass.png)"
-    >
-      <div class="container">
-        <div class="swiper wb-swiper-5">
-          <section-header alt="Target" display-type="image">
-            <span slot="headline">Headline</span>
-            <button class="icon-button wb-prev-5 pagination" slot="prev-button">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.2852 4.38128C12.6269 4.72299 12.6269 5.27701 12.2852 5.61872L7.90394 10L12.2852 14.3813C12.6269 14.723 12.6269 15.277 12.2852 15.6187C11.9435 15.9604 11.3895 15.9604 11.0478 15.6187L6.04779 10.6187C5.70608 10.277 5.70608 9.72299 6.04779 9.38128L11.0478 4.38128C11.3895 4.03957 11.9435 4.03957 12.2852 4.38128Z"
-                  fill="#302638"
-                />
-              </svg>
-            </button>
-            <button class="icon-button wb-next-5 pagination" slot="next-button">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.71478 4.38128C7.37307 4.72299 7.37307 5.27701 7.71478 5.61872L12.0961 10L7.71478 14.3813C7.37307 14.723 7.37307 15.277 7.71478 15.6187C8.05649 15.9604 8.61051 15.9604 8.95221 15.6187L13.9522 10.6187C14.2939 10.277 14.2939 9.72299 13.9522 9.38128L8.95221 4.38128C8.61051 4.03957 8.05649 4.03957 7.71478 4.38128Z"
-                  fill="#302638"
-                />
-              </svg>
-            </button>
-          </section-header>
-
-          <div class="swiper-wrapper multiwidth">
-            <div class="swiper-slide span-two-columns">
-              <div
-                class="box merch-card"
-                style="
-                  height: 100%;
-                  background-image: url(https://mobileimages.lowes.com/marketingimages/375c7f4d-a0fa-4c60-a238-f42bdb8e1c67/a-man-putting-fertilizer-in-his-sta-green-cart-in-his-lawn.png?im=Scale,width=1,height=1&fmt=webp);
-                "
-              >
-                <!-- test -->
-              </div>
-            </div>
-            <!-- Repeat browse-tile elements for more slides -->
-
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/90788610-27/deaf2e17-8f6f-43d8-8989-160e2b864a7b.jpeg"
-              >
-                <span slot="productName"
-                  >Men's Coors Short Sleeve Graphic T-Shirt - Beige XXL</span
+                  >Product Name</span
                 >
                 <span slot="line2">1 ct</span>
-                <!-- <span slot="line3">EBT eligible</span> -->
 
-                <span slot="price">$14.00</span>
+                <span slot="price">$5.99</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/81257699-27/629427ad-f52e-4f92-b7fc-9642c527b5e9.jpeg?fio=true&auto=webp&format=pjpg&quality=100%2C100&width=640"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >Men's Shield Sunglasses with Mirrored Lenses - All In Motion™
-                  White
-                </span>
+                  >Product Name</span
+                >
                 <span slot="line2">1 ct</span>
 
-                <span slot="price">$20.00</span>
+                <span slot="price">$5.99</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/4514446-460/be1f59a3-2f0e-443c-b690-1b4d4c93e535.jpeg?fio=true&auto=webp&format=pjpg&quality=100%2C100&width=640"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >SurfaceMaxx 1/4-in x 25-ft Pressure Washer Hose
-                </span>
+                  >Product Name</span
+                >
                 <span slot="line2">1 ct</span>
 
-                <span slot="price">$33.29</span>
+                <span slot="price">$5.99</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://mobileimages.lowes.com/productimages/165d0c1f-78fd-4c6f-a043-315b09dbb966/41600526.jpg?size=xl"
+                image="assets/placeholder-product.png"
               >
-                <span slot="productName">Project Source 24 in Leaf Rake</span>
+                <span slot="productName"
+                  >Product Name</span
+                >
                 <span slot="line2">1 ct</span>
 
-                <span slot="price">$15.59</span>
-              </product-card>
-            </div>
-
-            <div class="swiper-slide">
-              <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
-              >
-                <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
-                >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
-
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
+                <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
-                image="https://dsom-imager-prod.shipt.com/14915875-27/thumb_8df0df08-61a5-41d9-a4d3-cd2174c168ca.webp?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+                image="assets/placeholder-product.png"
               >
                 <span slot="productName"
-                  >LaCroix Sparkling Water Lime - 8pk/12 fl oz Cans</span
+                  >Product Name</span
                 >
-                <span slot="line2">8 ct; 12 fl oz</span>
-                <span slot="line3">EBT eligible</span>
-                <span slot="price">$3.99</span>
+                <span slot="line2">1 ct</span>
+
+                <span slot="price">$5.99</span>
+              </product-card>
+            </div>
+            <div class="swiper-slide">
+              <product-card
+                image="assets/placeholder-product.png"
+              >
+                <span slot="productName"
+                  >Product Name</span
+                >
+                <span slot="line2">1 ct</span>
+
+                <span slot="price">$5.99</span>
               </product-card>
             </div>
           </div>
