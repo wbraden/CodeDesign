@@ -21,7 +21,7 @@ template.innerHTML = `
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container quicklinks-retailer">
     <div class="navbar-links">
       <div class="navbar-link">
         <div class="store-group">

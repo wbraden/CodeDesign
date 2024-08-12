@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="theme--blue retailer">
+    <custom-navbar
+      logo-src="https://object-storage.shipt.com/web/assets/headerLogo-new.svg?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+      logo-alt="Shipt"
+      location="201 3rd St 94132"
+      store-logo-src="https://object-storage.shipt.com/stores/27-061819185725_4aa474376b672e5e20d95db190d54ca5.png?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=64"
+      store-logo-alt="Target"
+      store-text="Target"
+      cart-count="21"
+    ></custom-navbar>
+ 
+
+
+
+<!-- MARQUEE -->
+<div class="spacer-2"></div>      
+    <div class="lp-marquee">
+        <div class="container"><div class="marquee-wrapper">
+
+            <div class="marquee-content">
+                <h1 class="typography headline xl tcp marquee-header ">Pets so cute you wanna die</h1>
+                <p class="typography body xl tcs marquee-subheader ">Not really, but they are really cute you gotta admit.</p>
+                <a href="" class="button">Shop for a treat</a>       
+            </div>
+            <img src="assets/cat-lp-header-pets@2x.png" alt="">
+        </div>
+        </div>
+    </div>
+
+<!-- / MARQUEE -->
+
+
+
+    <section>
+        <div class="container">
+            <div class="swiper wb-swiper-1">
+                <section-header>
+                    <span slot="headline">Quench Your Thirst</span>
+                    <span slot="subheadline">Explore Our Wide Range of Beverages</span>
+                    <button class="icon-button wb-prev-1 pagination" slot="prev-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2852 4.38128C12.6269 4.72299 12.6269 5.27701 12.2852 5.61872L7.90394 10L12.2852 14.3813C12.6269 14.723 12.6269 15.277 12.2852 15.6187C11.9435 15.9604 11.3895 15.9604 11.0478 15.6187L6.04779 10.6187C5.70608 10.277 5.70608 9.72299 6.04779 9.38128L11.0478 4.38128C11.3895 4.03957 11.9435 4.03957 12.2852 4.38128Z" fill="#302638"/>
+                        </svg>
+                    </button>
+                    <button class="icon-button wb-next-1 pagination" slot="next-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71478 4.38128C7.37307 4.72299 7.37307 5.27701 7.71478 5.61872L12.0961 10L7.71478 14.3813C7.37307 14.723 7.37307 15.277 7.71478 15.6187C8.05649 15.9604 8.61051 15.9604 8.95221 15.6187L13.9522 10.6187C14.2939 10.277 14.2939 9.72299 13.9522 9.38128L8.95221 4.38128C8.61051 4.03957 8.05649 4.03957 7.71478 4.38128Z" fill="#302638"/>
+                        </svg>
+                    </button>
+                </section-header>
+    
+                <div class="swiper-wrapper" id="productCarousel">
+                    <!-- Slides will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="Components/browseTile.js"></script>
+<script src="Components/productCard.js"></script>
+<script src="Components/sectionHeader.js"></script>
+<script src="Components/navbar.js"></script>
+<script src="Components/cpgCard.js"></script>
+
+
+<script>
+    // Function to generate product card HTML
+    function generateProductCard(product) {
+        return `
+            <div class="swiper-slide">
+                <product-card image="${product.productImage}">
+                    <span slot="productName">${product.productName}</span>
+                    <span slot="line2">${product.line2}</span>
+                    <span slot="price">${product.productPrice}</span>
+                </product-card>
+            </div>
+        `;
+    }
+
+    // Fetch the JSON file and generate the carousel
+    fetch('data/household.json')
+        .then(response => response.json())
+        .then(products => {
+            const productCarousel = document.getElementById('productCarousel');
+            products.forEach(product => {
+                productCarousel.innerHTML += generateProductCard(product);
+            });
+
+            // Initialize Swiper after loading products
+            const swiper = new Swiper('.wb-swiper-1', {
+                slidesPerView: 2.1,
+                spaceBetween: 8,
+                navigation: {
+                    nextEl: '.wb-next-1',
+                    prevEl: '.wb-prev-1',
+                },
+                breakpoints: {
+                    480: { slidesPerView: 3.25, slidesPerGroup: 3 },
+                    768: { slidesPerView: 4, slidesPerGroup: 5 },
+                    1280: { slidesPerView: 6, slidesPerGroup: 6 },
+                    1440: { slidesPerView: 7, slidesPerGroup: 7 },
+                    1880: { slidesPerView: 8, slidesPerGroup: 8 },
+                },
+            });
+        })
+        .catch(error => console.error('Error fetching product data:', error));
+</script>
+   
+  </body>
+</html>
