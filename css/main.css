@@ -930,6 +930,15 @@ body.theme--neutral {
   align-self: end;
 }
 
+
+.greetings {
+  margin: 2rem auto;
+}
+
+
+
+
+/* NAVBAR */
 .navbar-links {
   display: flex;
   align-items: center;
