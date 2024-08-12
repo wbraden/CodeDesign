@@ -172,6 +172,29 @@ table {
 .surface-dark  section-header {
   --color-text-secondary: var(--color-text-secondary-inverse);
 }
+/* TYPOGRAPHY */
+/* 100	Thin (Hairline)
+200	Extra Light (Ultra Light)
+300	Light
+400	Normal
+500	Medium
+600	Semi Bold (Demi Bold)
+700	Bold
+800	Extra Bold (Ultra Bold)
+900	Black (Heavy) */
+
+.strike {
+  text-decoration: line-through;
+}
+.lb-reg {
+  font-weight: 400;
+}
+.lb-med {
+  font-weight: 500;
+}
+.lb-em {
+  font-weight: 700;
+}
 
 .typography.tcp {
   color: var(--color-text-primary);
@@ -181,11 +204,31 @@ table {
   color: var(--color-text-secondary);
 }
 
+.typography.tcpromo {
+  color: var(--color-text-promotion);
+}
+
+
+.typography.tcp.strike {
+  text-decoration-color: var(--color-text-primary);
+}
+
+.typography.tcs.strike {
+  text-decoration-color: var(--color-text-secondary);
+}
+
+.typography.tcpromo.strike {
+  text-decoration-color: var(--color-text-promotion);
+}
 
 .typography.body {
   text-align: left;
   line-height: 1.5;
   margin: 0;
+}
+
+.typography.body.lg {
+  font-size: 16px;
 }
 
 .typography.body.md {
@@ -199,10 +242,9 @@ table {
 .typography.headline,
 .typography.subheadline.lg {
   margin: 0;
-  font-weight: 700;
 }
-.typography.headline.xl {
-  font-size: 24px;
+
+.typography.headline {
   font-weight: 700;
 }
 
@@ -211,23 +253,29 @@ table {
   font-weight: 700;
 }
 
+.typography.headline.xl {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
 .typography.subheadline.lg {
   font-size: 14px;
   font-weight: 300;
 }
+
+
 @media (min-width: 1280px) {
   .typography.headline.xl {
     font-size: 32px;
-    font-weight: 700;
   }
+  
   .typography.headline.lg {
     font-size: 24px;
-    font-weight: 700;
   }
   
   .typography.subheadline.lg {
     font-size: 16px;
-    font-weight: 300;
   }
 }
 
@@ -277,7 +325,7 @@ body {
 
 .box:hover {
   background-color: var(--color-background-tertiary);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.0);
 }
 
 .box.horizontal {
@@ -299,11 +347,14 @@ body {
 /* Product Card */
 .box .product-content,
 .box .product-details {
-    flex:1;
+    /* flex:1; */
 }
 .typography.product-price {
   font-weight: 700;
-  margin-top: 8px;
+}
+
+.typography.positive {
+  color: hsl(160, 100%, 24%);
 }
 
 /* Merch Card */
@@ -432,10 +483,51 @@ img {
   display: flex;
   flex-direction: column;
 }
-
-img.product-image {
-  margin-bottom: 1rem;
+.product-name {
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+
+
+.product-details {
+  font-size: 14px;
+}
+.product-footer {
+  font-size: 16px;
+}
+
+
+@media (min-width: 768px) {
+  .product-details {
+    font-size: 16px;
+  }
+}
+
+
+.product-footer {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.product-image-wrapper {
+  /* background-color: var(--color-background-tertiary); */
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: .5rem;
+}
+img.product-image {
+  
+  
+  mix-blend-mode: multiply;
+}
+
+
 
 img.avatar {
   width: 48px;
@@ -657,11 +749,53 @@ button {
       --cpg-card-content-color:var(--color-accent-red-content-primary);
       --cpg-card-content-color-hover:var(--color-accent-red-content-primary);
     }
+    body.theme--orange {
+      --cpg-card-background-color: var(--color-accent-orange-bg-soft);
+      --cpg-card-border-color: var(--color-accent-orange-border-soft);
+      --cpg-card-background-color-hover: var(--color-accent-orange-bg-subtle);
+      --cpg-card-border-color-hover: var(--color-accent-orange-border-subtle);
+      --cpg-card-content-color:var(--color-accent-orange-content-primary);
+      --cpg-card-content-color-hover:var(--color-accent-orange-content-primary);
+    }
+    body.theme--yellow {
+      --cpg-card-background-color: var(--color-accent-yellow-bg-soft);
+      --cpg-card-border-color: var(--color-accent-yellow-border-soft);
+      --cpg-card-background-color-hover: var(--color-accent-yellow-bg-subtle);
+      --cpg-card-border-color-hover: var(--color-accent-yellow-border-subtle);
+      --cpg-card-content-color:var(--color-accent-yellow-content-primary);
+      --cpg-card-content-color-hover:var(--color-accent-yellow-content-primary);
+    }
+    body.theme--green {
+      --cpg-card-background-color: var(--color-accent-green-bg-soft);
+      --cpg-card-border-color: var(--color-accent-green-border-soft);
+      --cpg-card-background-color-hover: var(--color-accent-green-bg-subtle);
+      --cpg-card-border-color-hover: var(--color-accent-green-border-subtle);
+      --cpg-card-content-color:var(--color-accent-green-content-primary);
+      --cpg-card-content-color-hover:var(--color-accent-green-content-primary);
+    }
     body.theme--blue {
       --cpg-card-background-color: var(--color-accent-blue-bg-soft);
       --cpg-card-border-color: var(--color-accent-blue-border-soft);
       --cpg-card-background-color-hover: var(--color-accent-blue-bg-subtle);
       --cpg-card-border-color-hover: var(--color-accent-blue-border-subtle);
+      --cpg-card-content-color:var(--color-accent-blue-content-primary);
+      --cpg-card-content-color-hover:var(--color-accent-blue-content-primary);
+    }
+    body.theme--purple {
+      --cpg-card-background-color: var(--color-accent-purple-bg-soft);
+      --cpg-card-border-color: var(--color-accent-purple-border-soft);
+      --cpg-card-background-color-hover: var(--color-accent-purple-bg-subtle);
+      --cpg-card-border-color-hover: var(--color-accent-purple-border-subtle);
+      --cpg-card-content-color:var(--color-accent-purple-content-primary);
+      --cpg-card-content-color-hover:var(--color-accent-purple-content-primary);
+    }
+    body.theme--neutral {
+      --cpg-card-background-color: var(--color-accent-neutral-bg-soft);
+      --cpg-card-border-color: var(--color-accent-neutral-border-soft);
+      --cpg-card-background-color-hover: var(--color-accent-neutral-bg-subtle);
+      --cpg-card-border-color-hover: var(--color-accent-neutral-border-subtle);
+      --cpg-card-content-color:var(--color-accent-neutral-content-primary);
+      --cpg-card-content-color-hover:var(--color-accent-neutral-content-primary);
     }
     .cpg-card {
       background-color: var(--cpg-card-background-color, white); /* Default to white if not defined */
@@ -871,6 +1005,9 @@ button {
 
 /* FIX Mobile container  */
 @media (min-width: 0px) and (max-width: 1279px) {
+  img.product-image {
+    margin-bottom: 0;
+  }
   .section-header {
     /* padding:0 1rem; */
   }
@@ -891,6 +1028,10 @@ button {
 
   .browse-tile:hover .overlay {
     background:none;
+  }
+
+  .browse-tile-details {
+    margin-top: 0.5rem;
   }
     /* .browse-tile:active .overlay {
       background:none;
