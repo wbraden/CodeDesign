@@ -81,6 +81,12 @@ class CustomNavbar extends HTMLElement {
     } else {
       storeGroup.style.display = "none";
     }
+
+    // Conditionally display the navbar links row if the "retailer" attribute is present
+    const quicklinksRetailer = this.shadowRoot.querySelector(".quicklinks-retailer");
+    if (!this.hasAttribute("retailer")) {
+      quicklinksRetailer.style.display = "none";
+    }
   }
 }
 
