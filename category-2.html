@@ -18,56 +18,24 @@
       store-text="Target"
       cart-count="21"
     ></custom-navbar>
-    <!-- <div class="retail-banner">
-      <img
-        src="assets/target-banner.png"
-        alt="Retail Banner"
-        class="parallax-image"
-      />
-    </div> -->
 
-<!-- MARQUEE -->
-<!-- <div class="spacer-2"></div>      
-    <div class="lp-marquee">
-        <div class="container"><div class="marquee-wrapper">
-            <div class="marquee-image">
-                <img src="assets/curated-04.png" alt="" class="small">
-            </div>
-            <div class="marquee-content">
-                <h1 class="marquee-header typography headline xl tcp">Pets so cute you wanna die</h1>
-                <p class="marquee-subheader typography body xl tcs">Not really, but they are really cute you gotta admit.</p>
-                <a href="" class="button">Shop for a treat</a>       
-            </div>
-            
-        </div>
-        </div>
-    </div> -->
+    <!-- HEADER IMAGE -->
+    <div class="container">
+      <img src="assets/pet-header.png" alt="" class="slim-header" />
+    </div>
 
-<!-- / MARQUEE -->
-
-
-<!-- HEADER -->
- <!-- <div class="spacer-2"></div>       -->
+    <!-- TITLE -->
+    <div class="container greetings">
+      <h1 class="typography headline xl">Pets</h1>
+    </div>
     
-        <div class="container">
-                <img src="assets/pet-header.png" alt="" class="slim-header">
-            </div>
-            
-    
-
-<!-- / HEADER -->
-
-<!-- <div class="spacer-2"></div> -->
-<div class="container greetings">
-    <h1 class="typography headline xl">Pets</h1>
-</div>
     <!-- CATEGORIES -->
     <section>
-        <div class="container">
-          <div class="swiper wb-swiper-1">
-            <section-header alt="Target">
-              <span slot="headline">Top categories</span>
-              <!-- <button class="icon-button wb-prev-1 pagination" slot="prev-button">
+      <div class="container">
+        <div class="swiper wb-swiper-1">
+          <section-header alt="Target">
+            <span slot="headline">Top categories</span>
+            <button class="icon-button wb-prev-1 pagination" slot="prev-button">
                 <svg
                   width="20"
                   height="20"
@@ -98,85 +66,90 @@
                     fill="#302638"
                   />
                 </svg>
-              </button> -->
-            </section-header>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <browse-tile
-                  aspect="4-3"
-                  promotion
-                  image="assets/category-dog.png"
-                  alt="Retailer 1"
-                >
-                  <span slot="label">Dogs</span>
-                </browse-tile>
-              </div>
-  
-              <!-- Repeat browse-tile elements for more slides -->
-              <div class="swiper-slide">
-                <browse-tile
-                  aspect="4-3"
-                  image="assets/category-cat.png"
-                  alt="Retailer 1"
-                >
-                  <span slot="label">Cats</span>
-                </browse-tile>
-              </div>
-              <div class="swiper-slide">
-                <browse-tile
-                  aspect="4-3"
-                  link="/retailer.html"
-                  image="assets/category-birds.png"
-                  alt="Retailer 1"
-                >
-                  <span slot="label">Birds</span>
-                </browse-tile>
-              </div>
-              <div class="swiper-slide">
-                <browse-tile
-                  aspect="4-3"
-                  image="assets/category-fish.png"
-                  alt="Retailer 1"
-                >
-                  <span slot="label">Fish</span>
-                </browse-tile>
-              </div>
-              <div class="swiper-slide">
-                <browse-tile
-                  aspect="4-3"
-                  image="assets/category-reptile.png"
-                  alt="Retailer 1"
-                >
-                  <span slot="label">Reptiles</span>
-                </browse-tile>
-              </div>
-              <div class="swiper-slide">
-                <browse-tile
-                  aspect="4-3"
-                  image="assets/category-small-animals.png"
-                  alt="Retailer 1"
-                >
-                  <span slot="label">Small animals</span>
-                </browse-tile>
-              </div>
-              
+              </button>
+          </section-header>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <browse-tile
+                aspect="4-3"
+                promotion
+                image="assets/category-dog.png"
+                alt="Retailer 1"
+              >
+                <span slot="label">Dogs</span>
+              </browse-tile>
+            </div>
+
+            <!-- Repeat browse-tile elements for more slides -->
+            <div class="swiper-slide">
+              <browse-tile
+                aspect="4-3"
+                image="assets/category-cat.png"
+                alt="Retailer 1"
+              >
+                <span slot="label">Cats</span>
+              </browse-tile>
+            </div>
+            <div class="swiper-slide">
+              <browse-tile
+                aspect="4-3"
+                link="/retailer.html"
+                image="assets/category-birds.png"
+                alt="Retailer 1"
+              >
+                <span slot="label">Birds</span>
+              </browse-tile>
+            </div>
+            <div class="swiper-slide">
+              <browse-tile
+                aspect="4-3"
+                image="assets/category-fish.png"
+                alt="Retailer 1"
+              >
+                <span slot="label">Fish</span>
+              </browse-tile>
+            </div>
+            <div class="swiper-slide">
+              <browse-tile
+                aspect="4-3"
+                image="assets/category-reptile.png"
+                alt="Retailer 1"
+              >
+                <span slot="label">Reptiles</span>
+              </browse-tile>
+            </div>
+            <div class="swiper-slide">
+              <browse-tile
+                aspect="4-3"
+                image="assets/category-small-animals.png"
+                alt="Retailer 1"
+              >
+                <span slot="label">Small animals</span>
+              </browse-tile>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <custom-carousel 
-          headline="Dogs" 
-          subheadline="Description" 
-          data-source="data/dogs.json" 
-          component-type="product-card">
-      </custom-carousel>
-      <custom-carousel 
-      headline="Cats" 
-      subheadline="Description" 
-      data-source="data/cats.json" 
-      component-type="product-card">
-  </custom-carousel>
+    <!-- DOGS -->
+    <custom-carousel
+      headline="Dogs"
+      subheadline="Description"
+      data-source="data/dogs.json"
+      component-type="product-card"
+    >
+    </custom-carousel>
+
+    <!-- CATS -->
+    <custom-carousel
+      header-image="assets/kitty-corner.png"
+      headline="Cats"      
+      subheadline="Description"
+      data-source="data/cats.json"
+      component-type="product-card"
+    >
+    </custom-carousel>
 
     <!-- CPG -->
     <section>
@@ -287,13 +260,11 @@
       </div>
     </section>
 
-
     <!-- Image header and color bg -->
     <section class="colorize-blue has-background">
       <div class="container">
         <div class="swiper wb-swiper-5">
-          <section-header alt="Target" display-type="image">
-            
+          <section-header alt="Target" header-image="assets/kitty-corner.png">
             <!-- <span slot="subheadline"
               >All the ingredients to create a soothing smoothie on this hot,
               hot, hot day.</span
@@ -334,8 +305,8 @@
 
           <div class="swiper-wrapper multiwidth">
             <!-- Repeat browse-tile elements for more slides -->
-            
-              <div class="swiper-slide span-two-columns">
+
+            <!-- <div class="swiper-slide span-two-columns">
                 <div
                   class="box merch-card"
                   style="
@@ -344,40 +315,41 @@
                     background-image: url(assets/kitty-merch-card.png);
                   "
                 >
-                  <!-- test -->
                 </div>
-              </div>
+              </div> -->
             <div class="swiper-slide">
               <product-card
-              image="https://target.scene7.com/is/image/Target/GUEST_880b1aeb-6e9f-42b4-8e37-348e54813aca?wid=1200&hei=1200&qlt=80&fmt=webp"
-            >
-            <span slot="productMessaging">Buy again</span>
-              <span slot="productName">Quirky Jiggling Jellyfish Wand</span>
-              <span slot="line2">1 ct</span>            
-              <span slot="price">$5.79</span>
-              <span slot="priceOriginal">$6.99</span>
-              <span slot="productPricePercentOff">20% off</span>
-            </product-card>
+                image="https://target.scene7.com/is/image/Target/GUEST_880b1aeb-6e9f-42b4-8e37-348e54813aca?wid=1200&hei=1200&qlt=80&fmt=webp"
+              >
+                <span slot="productMessaging">Buy again</span>
+                <span slot="productName">Quirky Jiggling Jellyfish Wand</span>
+                <span slot="line2">1 ct</span>
+                <span slot="price">$5.79</span>
+                <span slot="priceOriginal">$6.99</span>
+                <span slot="productPricePercentOff">20% off</span>
+              </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
                 image="https://target.scene7.com/is/image/Target/GUEST_fc448a19-5168-49de-831b-ad9525d7872f?qlt=65&fmt=webp&hei=350&wid=350"
-              >                
+              >
                 <span slot="productName"
                   >Quirky Kitty hard Seltzpurr Cat Toy - 2pk</span
                 >
-                <span slot="line2">1 ct</span>              
+                <span slot="line2">1 ct</span>
                 <span slot="price">$3.81</span>
               </product-card>
             </div>
             <div class="swiper-slide">
               <product-card
                 image="https://target.scene7.com/is/image/Target/GUEST_d9734ee3-3f14-4a3e-8597-ff80584f432d?wid=1200&hei=1200&qlt=80&fmt=webp"
-              >              
+              >
                 <span slot="productName"
-                  >Unique Bargains Square Paper Bag with Handle Bouquet Packaging Gift Bag for Party Favor Brown 8''x8''x8'' 10 Pcs</span
+                  >Unique Bargains Square Paper Bag with Handle Bouquet
+                  Packaging Gift Bag for Party Favor Brown 8''x8''x8'' 10
+                  Pcs</span
                 >
-                <span slot="line2">10 ct</span>                
+                <span slot="line2">10 ct</span>
                 <span slot="price">$33.69</span>
               </product-card>
             </div>
@@ -394,12 +366,8 @@
               </product-card>
             </div>
             <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
+              <product-card image="assets/placeholder-product.png">
+                <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
@@ -407,12 +375,8 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
+              <product-card image="assets/placeholder-product.png">
+                <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
@@ -420,12 +384,8 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
+              <product-card image="assets/placeholder-product.png">
+                <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
@@ -433,12 +393,8 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
+              <product-card image="assets/placeholder-product.png">
+                <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
@@ -446,12 +402,8 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
+              <product-card image="assets/placeholder-product.png">
+                <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
@@ -459,193 +411,8 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRODUCTS DEFAULT -->
-    <section>
-      <div class="container">
-        <div class="swiper wb-swiper-2">
-          <section-header>
-            <span slot="headline">Products</span>
-            <span slot="subheadline">Good stuff</span>
-            <button class="icon-button wb-prev-2 pagination" slot="prev-button">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.2852 4.38128C12.6269 4.72299 12.6269 5.27701 12.2852 5.61872L7.90394 10L12.2852 14.3813C12.6269 14.723 12.6269 15.277 12.2852 15.6187C11.9435 15.9604 11.3895 15.9604 11.0478 15.6187L6.04779 10.6187C5.70608 10.277 5.70608 9.72299 6.04779 9.38128L11.0478 4.38128C11.3895 4.03957 11.9435 4.03957 12.2852 4.38128Z"
-                  fill="#302638"
-                />
-              </svg>
-            </button>
-            <button class="icon-button wb-next-2 pagination" slot="next-button">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.71478 4.38128C7.37307 4.72299 7.37307 5.27701 7.71478 5.61872L12.0961 10L7.71478 14.3813C7.37307 14.723 7.37307 15.277 7.71478 15.6187C8.05649 15.9604 8.61051 15.9604 8.95221 15.6187L13.9522 10.6187C14.2939 10.277 14.2939 9.72299 13.9522 9.38128L8.95221 4.38128C8.61051 4.03957 8.05649 4.03957 7.71478 4.38128Z"
-                  fill="#302638"
-                />
-              </svg>
-            </button>
-          </section-header>
-
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <!-- Repeat browse-tile elements for more slides -->
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
-                <span slot="line2">1 ct</span>
-
-                <span slot="price">$5.99</span>
-              </product-card>
-            </div>
-            <div class="swiper-slide">
-              <product-card
-                image="assets/placeholder-product.png"
-              >
-                <span slot="productName"
-                  >Product Name</span
-                >
+              <product-card image="assets/placeholder-product.png">
+                <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
                 <span slot="price">$5.99</span>
@@ -682,78 +449,78 @@
           navigation: { nextEl: ".wb-next-1", prevEl: ".wb-prev-1" },
         });
       });
-</script>
+    </script>
 
-<script>
-    // Function to generate product card HTML
-    function generateProductCard(product) {
+    <script>
+      // Function to generate product card HTML
+      function generateProductCard(product) {
         let productCardHTML = `<div class="swiper-slide"><product-card`;
 
         // Check and add the image attribute if it exists
         if (product.productImage) {
-            productCardHTML += ` image="${product.productImage}"`;
+          productCardHTML += ` image="${product.productImage}"`;
         }
 
         productCardHTML += `>`;
 
         if (product.productMessaging) {
-            productCardHTML += `<span slot="productMessaging">${product.productMessaging}</span>`;
+          productCardHTML += `<span slot="productMessaging">${product.productMessaging}</span>`;
         }
 
         if (product.productName) {
-            productCardHTML += `<span slot="productName">${product.productName}</span>`;
+          productCardHTML += `<span slot="productName">${product.productName}</span>`;
         }
 
         if (product.productSize) {
-            productCardHTML += `<span slot="line2">${product.productSize}</span>`;
+          productCardHTML += `<span slot="line2">${product.productSize}</span>`;
         }
 
         if (product.productPrice) {
-            productCardHTML += `<span slot="price">${product.productPrice}</span>`;
+          productCardHTML += `<span slot="price">${product.productPrice}</span>`;
         }
-        
+
         if (product.productPriceOriginal) {
-            productCardHTML += `<span slot="priceOriginal">${product.productPriceOriginal}</span>`;
+          productCardHTML += `<span slot="priceOriginal">${product.productPriceOriginal}</span>`;
         }
 
         if (product.productPricePercentOff) {
-            productCardHTML += `<span slot="productPricePercentOff">${product.productPricePercentOff}</span>`;
+          productCardHTML += `<span slot="productPricePercentOff">${product.productPricePercentOff}</span>`;
         }
         productCardHTML += `</product-card></div>`;
 
         return productCardHTML;
-}
+      }
 
-    // Fetch the JSON file and generate the carousel
-    fetch('data/pets.json')
-        .then(response => response.json())
-        .then(products => {
-            const productCarousel = document.getElementById('Pets');
-            products.forEach(product => {
-                productCarousel.innerHTML += generateProductCard(product);
-            });
+      // Fetch the JSON file and generate the carousel
+      fetch("data/pets.json")
+        .then((response) => response.json())
+        .then((products) => {
+          const productCarousel = document.getElementById("Pets");
+          products.forEach((product) => {
+            productCarousel.innerHTML += generateProductCard(product);
+          });
 
-            // Initialize Swiper after loading products
-            const swiper = new Swiper('.wb-swiper-2', {
-                slidesPerView: 2.1,
-                spaceBetween: 8,
-                navigation: {
-                    nextEl: '.wb-next-2',
-                    prevEl: '.wb-prev-2',
-                },
-                breakpoints: {
-                    480: { slidesPerView: 3.25, slidesPerGroup: 3 },
-                    768: { slidesPerView: 4, slidesPerGroup: 5 },
-                    1280: { slidesPerView: 6, slidesPerGroup: 6 },
-                    1440: { slidesPerView: 7, slidesPerGroup: 7 },
-                    1880: { slidesPerView: 8, slidesPerGroup: 8 },
-                },
-            });
+          // Initialize Swiper after loading products
+          const swiper = new Swiper(".wb-swiper-2", {
+            slidesPerView: 2.1,
+            spaceBetween: 8,
+            navigation: {
+              nextEl: ".wb-next-2",
+              prevEl: ".wb-prev-2",
+            },
+            breakpoints: {
+              480: { slidesPerView: 3.25, slidesPerGroup: 3 },
+              768: { slidesPerView: 4, slidesPerGroup: 5 },
+              1280: { slidesPerView: 6, slidesPerGroup: 6 },
+              1440: { slidesPerView: 7, slidesPerGroup: 7 },
+              1880: { slidesPerView: 8, slidesPerGroup: 8 },
+            },
+          });
         })
-        .catch(error => console.error('Error fetching product data:', error));
-</script>
+        .catch((error) => console.error("Error fetching product data:", error));
+    </script>
 
-<script>
+    <script>
       // CPG Card
       document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".wb-swiper-4", {

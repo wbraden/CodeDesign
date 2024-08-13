@@ -61,6 +61,10 @@ class CustomCarousel extends HTMLElement {
 
     render() {
         const headline = this.getAttribute("headline") || "Default Headline";
+        
+        const headerImage = this.getAttribute("header-image") || "";
+        this.shadowRoot.querySelector("section-header").setAttribute("header-image", headerImage);
+        
         const subheadline = this.getAttribute("subheadline") || "Default Subheadline";
         const dataSource = this.getAttribute("data-source");
         const componentType = this.getAttribute("component-type") || "product-card";

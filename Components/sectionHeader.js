@@ -29,7 +29,20 @@ class SectionHeader extends HTMLElement {
     connectedCallback() {
         const avatar = this.getAttribute('avatar');
         const alt = this.getAttribute('alt') || 'Avatar';
-        
+        const headerImage = this.getAttribute('header-image');
+        if (headerImage) {
+            const headerImageSlot = document.createElement('div');
+            headerImageSlot.classList.add('header-image-slot');
+            const img = document.createElement('img');
+            img.src = headerImage;
+            img.alt = 'Header Image';
+            headerImageSlot.appendChild(img);
+            const carouselHeaderImageSlot = document.createElement('slot');
+            carouselHeaderImageSlot.setAttribute('name', 'header-image');
+            carouselHeaderImageSlot.appendChild(headerImageSlot);
+            this.shadowRoot.querySelector('.headline').insertAdjacentElement('afterbegin', carouselHeaderImageSlot);
+        }
+
         if (avatar) {
             const leftSlot = document.createElement('div');
             leftSlot.classList.add('left-slot', 'fr');

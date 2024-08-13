@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">  
+</head>
+<body>
+    <custom-navbar
+      logo-src="https://object-storage.shipt.com/web/assets/headerLogo-new.svg?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+      logo-alt="Shipt"
+      location="201 3rd St 94132"
+      store-logo-src="https://object-storage.shipt.com/stores/27-061819185725_4aa474376b672e5e20d95db190d54ca5.png?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=64"
+      store-logo-alt="Target"
+      store-text="Target"
+      cart-count="21"
+    ></custom-navbar>
+
+    <main>
+
+
+    <!-- TITLE -->
+    <div class="container greetings">
+        <h1 class="typography headline xl">Pets</h1>
+      </div>
+        
+    <custom-grid
+        
+        data-source="data/pets.json"
+        ></custom-grid>
+            
+        
+    </main>
+
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Components/browseTile.js"></script>
+    <script src="Components/productCard.js"></script>
+    <script src="Components/sectionHeader.js"></script>
+    <script src="Components/navbar.js"></script>
+    <script src="Components/cpgCard.js"></script>
+    <script src="Components/carousel.js"></script>
+    <script src="Components/grid.js"></script>
+
+</body>
+</html>
