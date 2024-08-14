@@ -27,16 +27,30 @@
 
     <!-- TITLE -->
     <div class="container greetings">
-      <h1 class="typography headline xl">Pets</h1>
+      <h1 class="typography headline xl">Grocery</h1>
     </div>
     
-    <!-- CATEGORIES -->
+ 
+
+  
+    <!-- PLACEHOLDER -->
+    <custom-carousel
+      headline="Produce"
+      subheadline="Description"
+      data-source="data/produce.json"
+      component-type="product-card"
+    >
+    </custom-carousel>
+
+
+
+    <!-- CPG -->
     <section>
-      <div class="container">
-        <div class="swiper wb-swiper-1">
-          <section-header alt="Target">
-            <span slot="headline">Top categories</span>
-            <button class="icon-button wb-prev-1 pagination" slot="prev-button">
+        <div class="container">
+          <div class="swiper wb-swiper-4">
+            <section-header alt="Target">
+              <span slot="headline">Deals</span>
+              <button class="icon-button wb-prev-4 pagination" slot="prev-button">
                 <svg
                   width="20"
                   height="20"
@@ -52,7 +66,7 @@
                   />
                 </svg>
               </button>
-              <button class="icon-button wb-next-1 pagination" slot="next-button">
+              <button class="icon-button wb-next-4 pagination" slot="next-button">
                 <svg
                   width="20"
                   height="20"
@@ -68,191 +82,87 @@
                   />
                 </svg>
               </button>
-          </section-header>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <browse-tile
-                aspect="4-3"
-                promotion
-                image="assets/category-dog.png"
-                alt="Retailer 1"
-                link="dogs.html"
-              >
-                <span slot="label">Products</span>
-              </browse-tile>
-            </div>
-
-            <!-- Repeat browse-tile elements for more slides -->
-            <div class="swiper-slide">
-              <browse-tile
-                aspect="4-3"
-                image="assets/category-cat.png"
-                alt="Retailer 1"
-                link="cats.html"
-              >
-                <span slot="label">Cats</span>
-              </browse-tile>
-            </div>
-            <div class="swiper-slide">
-              <browse-tile
-                aspect="4-3"
-                link="/retailer.html"
-                image="assets/category-birds.png"
-                alt="Retailer 1"
-              >
-                <span slot="label">Birds</span>
-              </browse-tile>
-            </div>
-            <div class="swiper-slide">
-              <browse-tile
-                aspect="4-3"
-                image="assets/category-fish.png"
-                alt="Retailer 1"
-              >
-                <span slot="label">Fish</span>
-              </browse-tile>
-            </div>
-            <div class="swiper-slide">
-              <browse-tile
-                aspect="4-3"
-                image="assets/category-reptile.png"
-                alt="Retailer 1"
-              >
-                <span slot="label">Reptiles</span>
-              </browse-tile>
-            </div>
-            <div class="swiper-slide">
-              <browse-tile
-                aspect="4-3"
-                image="assets/category-small-animals.png"
-                alt="Retailer 1"
-              >
-                <span slot="label">Small animals</span>
-              </browse-tile>
+            </section-header>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <cpg-card image="assets/dogfood.png">
+                  <span slot="headline"
+                    >Quality ingredients your dog deserves</span
+                  >
+                  <span slot="description">Shop Blue Buffalo dog food</span>
+                  <span slot="cta">Shop now</span>
+                </cpg-card>
+              </div>
+              <!-- Repeat browse-tile elements for more slides -->
+              <div class="swiper-slide">
+                <cpg-card image="assets/method.png">
+                  <span slot="headline"
+                    >Quality ingredients your dog deserves</span
+                  >
+                  <span slot="description">Shop Blue Buffalo dog food</span>
+                  <span slot="cta">Shop now</span>
+                </cpg-card>
+              </div>
+              <div class="swiper-slide">
+                <cpg-card image="assets/dogfood.png">
+                  <span slot="headline"
+                    >Quality ingredients your dog deserves</span
+                  >
+                  <span slot="description">Shop Blue Buffalo dog food</span>
+                  <span slot="cta">Shop now</span>
+                </cpg-card>
+              </div>
+              <div class="swiper-slide">
+                <cpg-card image="assets/method.png">
+                  <span slot="headline"
+                    >Quality ingredients your dog deserves</span
+                  >
+                  <span slot="description">Shop Blue Buffalo dog food</span>
+                  <span slot="cta">Shop now</span>
+                </cpg-card>
+              </div>
+              <div class="swiper-slide">
+                <cpg-card image="assets/dogfood.png">
+                  <span slot="headline"
+                    >Quality ingredients your dog deserves</span
+                  >
+                  <span slot="description">Shop Blue Buffalo dog food</span>
+                  <span slot="cta">Shop now</span>
+                </cpg-card>
+              </div>
+              <div class="swiper-slide">
+                <cpg-card image="assets/dogfood.png">
+                  <span slot="headline"
+                    >Quality ingredients your dog deserves</span
+                  >
+                  <span slot="description">Shop Blue Buffalo dog food</span>
+                  <span slot="cta">Shop now</span>
+                </cpg-card>
+              </div>
+              <div class="swiper-slide">
+                <cpg-card image="assets/dogfood.png">
+                  <span slot="headline"
+                    >Quality ingredients your dog deserves</span
+                  >
+                  <span slot="description">Shop Blue Buffalo dog food</span>
+                  <span slot="cta">Shop now</span>
+                </cpg-card>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+  
+  
 
     <!-- PLACEHOLDER -->
     <custom-carousel
-      headline="Products"
+      headline="Pantry"
       subheadline="Description"
-      data-source="data/placeholder.json"
+      data-source="data/pantry.json"
       component-type="product-card"
     >
     </custom-carousel>
-
-
-    <!-- CPG -->
-    <section>
-      <div class="container">
-        <div class="swiper wb-swiper-4">
-          <section-header alt="Target">
-            <span slot="headline">Deals</span>
-            <button class="icon-button wb-prev-4 pagination" slot="prev-button">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.2852 4.38128C12.6269 4.72299 12.6269 5.27701 12.2852 5.61872L7.90394 10L12.2852 14.3813C12.6269 14.723 12.6269 15.277 12.2852 15.6187C11.9435 15.9604 11.3895 15.9604 11.0478 15.6187L6.04779 10.6187C5.70608 10.277 5.70608 9.72299 6.04779 9.38128L11.0478 4.38128C11.3895 4.03957 11.9435 4.03957 12.2852 4.38128Z"
-                  fill="#302638"
-                />
-              </svg>
-            </button>
-            <button class="icon-button wb-next-4 pagination" slot="next-button">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.71478 4.38128C7.37307 4.72299 7.37307 5.27701 7.71478 5.61872L12.0961 10L7.71478 14.3813C7.37307 14.723 7.37307 15.277 7.71478 15.6187C8.05649 15.9604 8.61051 15.9604 8.95221 15.6187L13.9522 10.6187C14.2939 10.277 14.2939 9.72299 13.9522 9.38128L8.95221 4.38128C8.61051 4.03957 8.05649 4.03957 7.71478 4.38128Z"
-                  fill="#302638"
-                />
-              </svg>
-            </button>
-          </section-header>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <cpg-card image="assets/dogfood.png">
-                <span slot="headline"
-                  >Quality ingredients your dog deserves</span
-                >
-                <span slot="description">Shop Blue Buffalo dog food</span>
-                <span slot="cta">Shop now</span>
-              </cpg-card>
-            </div>
-            <!-- Repeat browse-tile elements for more slides -->
-            <div class="swiper-slide">
-              <cpg-card image="assets/method.png">
-                <span slot="headline"
-                  >Quality ingredients your dog deserves</span
-                >
-                <span slot="description">Shop Blue Buffalo dog food</span>
-                <span slot="cta">Shop now</span>
-              </cpg-card>
-            </div>
-            <div class="swiper-slide">
-              <cpg-card image="assets/dogfood.png">
-                <span slot="headline"
-                  >Quality ingredients your dog deserves</span
-                >
-                <span slot="description">Shop Blue Buffalo dog food</span>
-                <span slot="cta">Shop now</span>
-              </cpg-card>
-            </div>
-            <div class="swiper-slide">
-              <cpg-card image="assets/method.png">
-                <span slot="headline"
-                  >Quality ingredients your dog deserves</span
-                >
-                <span slot="description">Shop Blue Buffalo dog food</span>
-                <span slot="cta">Shop now</span>
-              </cpg-card>
-            </div>
-            <div class="swiper-slide">
-              <cpg-card image="assets/dogfood.png">
-                <span slot="headline"
-                  >Quality ingredients your dog deserves</span
-                >
-                <span slot="description">Shop Blue Buffalo dog food</span>
-                <span slot="cta">Shop now</span>
-              </cpg-card>
-            </div>
-            <div class="swiper-slide">
-              <cpg-card image="assets/dogfood.png">
-                <span slot="headline"
-                  >Quality ingredients your dog deserves</span
-                >
-                <span slot="description">Shop Blue Buffalo dog food</span>
-                <span slot="cta">Shop now</span>
-              </cpg-card>
-            </div>
-            <div class="swiper-slide">
-              <cpg-card image="assets/dogfood.png">
-                <span slot="headline"
-                  >Quality ingredients your dog deserves</span
-                >
-                <span slot="description">Shop Blue Buffalo dog food</span>
-                <span slot="cta">Shop now</span>
-              </cpg-card>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 
@@ -418,17 +328,6 @@
         </div>
       </div>
     </section>
-
-
-    <!-- PLACEHOLDER -->
-    <custom-carousel
-      headline="Products"
-      subheadline="Description"
-      data-source="data/placeholder.json"
-      component-type="product-card"
-    >
-    </custom-carousel>
-
 
 
 

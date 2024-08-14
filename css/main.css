@@ -706,6 +706,8 @@ img {
 }
 img.product-image {
   mix-blend-mode: multiply;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 img.avatar {
