@@ -6,7 +6,7 @@ template.innerHTML = `
     <div class="navbar">
       <div class="navbar-left">
         <button class="menu-button">☰</button>
-        <a class="logo-link" href="../"><img src="" alt="Shipt Logo" class="logo"></a>
+        <a class="logo-link" href="./"><img src="" alt="Shipt Logo" class="logo"></a>
         <a class="location-link"><span class="location"></span><img class="icon md" src="assets/icons/caret-down.svg" alt="Icon description"></a>
       </div>
       <div class="navbar-center">
