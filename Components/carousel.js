@@ -5,7 +5,7 @@ class CustomCarousel extends HTMLElement {
         const template = document.createElement("template");
         template.innerHTML = `
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-            <link rel="stylesheet" href="../css/main.css">            
+            <link rel="stylesheet" href="css/main.css">            
             <section>
                 <div class="container">
                     <div class="swiper">
