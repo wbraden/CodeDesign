@@ -1,6 +1,6 @@
 const gridTemplate = document.createElement("template");
 gridTemplate.innerHTML = `
- <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="../css/main.css">
   <section>
     <div class="container">
       <div class="wrapper"></div>
@@ -23,12 +23,12 @@ class CustomGrid extends HTMLElement {
       const dataSource = this.getAttribute("data-source");
   
       fetch(dataSource)
-        .then((response) => response.json())
-        .then((data) => {
+        .then(response => response.json())
+        .then(data => {
           const wrapper = this.shadowRoot.querySelector(".wrapper");
           wrapper.innerHTML = ""; // Clear any existing content
   
-          data.forEach((product) => {
+          data.forEach(product => {
             const productCard = document.createElement("product-card");
   
             // Set attributes for the product-card component
@@ -73,7 +73,7 @@ class CustomGrid extends HTMLElement {
             wrapper.appendChild(productCard);
           });
         })
-        .catch((error) => console.error("Error fetching product data:", error));
+        .catch(error => console.error("Error fetching product data:", error));
     }
   }
   

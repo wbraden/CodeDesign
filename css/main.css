@@ -445,17 +445,6 @@ body {
   font-synthesis: none;
 }
 
-.ar169 {
-  aspect-ratio: 16 / 9;
-}
-
-.ar43 {
-  aspect-ratio: 4 / 3 !important;
-}
-
-.ar11 {
-  aspect-ratio: 1 / 1 !important;
-}
 
 /* Box */
 .box {
@@ -527,31 +516,47 @@ body {
   background-position: center center;
   position: relative;
 }
+.browse-tile-details {
+  margin-top: 0.5rem;
+}
+.media.ar169 {
+  aspect-ratio: 16 / 9;
+}
+.media.ar916 {
+  aspect-ratio: 9 / 16;
+}
+.media.ar43 {
+  aspect-ratio: 4 / 3 !important;
+}
+.media.ar11 {
+  aspect-ratio: 1 / 1 !important;
+}
+
 .browse-tile:hover .media {
   border: 0.5px solid rgba(0, 0, 0, 0);
 }
 
-.browse-tile .media img {
+.browse-tile .media img,
+.browse-tile .media video{
   position: absolute;
   border-radius: 0.5rem;
   left: -1px;
   top: -1px;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
   z-index: -1;
 }
 
 .browse-tile .overlay {
   position: absolute;
-  border-radius: 0.5rem;
-  left: -1px;
-    top: -1px;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
+  border-radius: 0.45rem;
+  left: -.5px;
+  top: -.5px;
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
   z-index: 1;
   background-color: rgba(0, 0, 0, 0);
   border: 0.5px solid rgba(0, 0, 0, 0);
-  /* transition: background-color 0.3s ease; */
 }
 
 .browse-tile:hover .overlay {
@@ -1293,12 +1298,7 @@ a.button {
     background: none;
   }
 
-  .browse-tile-details {
-    margin-top: 0.5rem;
-  }
-  /* .browse-tile:active .overlay {
-      background:none;
-    } */
+
 
   .box:hover {
     background-color: var(--color-background-primary);

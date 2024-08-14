@@ -5,21 +5,7 @@ class CustomCarousel extends HTMLElement {
         const template = document.createElement("template");
         template.innerHTML = `
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-            <link rel="stylesheet" href="css/main.css">
-            <style>
-            .swiper-wrapper {
-                display: flex;
-                flex-wrap: nowrap;
-                transition-property: transform;
-                box-sizing: content-box;
-            }
-
-            .swiper-slide {
-                flex-shrink: 0;
-                width: auto; /* Swiper JS will manage the width */
-                height: auto; /* Optional: depending on your layout */
-            }
-            </style>
+            <link rel="stylesheet" href="../css/main.css">            
             <section>
                 <div class="container">
                     <div class="swiper">
