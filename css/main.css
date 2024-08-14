@@ -245,8 +245,8 @@ table {
 
   /* Green */
   --color-accent-green-bg-subtle: hsl(144, 62.5%, 90.6%);
-  --color-accent-green-bg-soft: hsl(146, 60.4%, 81.2%);
-  --color-accent-green-bg-loud: hsl(159, 59.5%, 32.9%);
+  --color-accent-green-bg-soft: #ADEBC8;
+  --color-accent-green-bg-loud: #228663;
   --color-accent-green-bg-heavy: hsl(160, 39.5%, 14.9%);
   --color-accent-green-content-primary: hsl(159, 39.5%, 8.43%);
   --color-accent-green-content-secondary: hsl(160, 58.9%, 27.6%);
@@ -296,17 +296,46 @@ table {
   /* Aspect Ratios */
   --aspect_ratio_wrapper-ratio: 4 / 3;
 }
-
+/* Red */
+.theme--red .colorize .container,
 .colorize-red .container {
   background-color: var(--color-accent-red-bg-soft);
-
 }
 
+/* Blue */
 .theme--blue .colorize .container,
 .colorize-blue .container {
   background-color: var(--color-accent-blue-bg-soft);
-  background-color: #D4E6FD;
+}
 
+/* Orange */
+.theme--orange .colorize .container,
+.colorize-orange .container {
+  background-color: var(--color-accent-orange-bg-soft);
+}
+
+/* Yellow */
+.theme--yellow .colorize .container,
+.colorize-yellow .container {
+  background-color: var(--color-accent-yellow-bg-soft);
+}
+
+/* Green */
+.theme--green .colorize .container,
+.colorize-green .container {
+  background-color: var(--color-accent-green-bg-soft);
+}
+
+/* Purple */
+.theme--purple .colorize .container,
+.colorize-purple .container {
+  background-color: var(--color-accent-purple-bg-soft);
+}
+
+/* Neutral */
+.theme--neutral .colorize .container,
+.colorize-neutral .container {
+  background-color: var(--color-accent-neutral-bg-soft);
 }
 
 
@@ -317,7 +346,9 @@ table {
   --color-text-secondary: var(--color-text-secondary-inverse);
 }
 /* TYPOGRAPHY */
-/* 100	Thin (Hairline)
+/* 
+
+100	Thin (Hairline)
 200	Extra Light (Ultra Light)
 300	Light
 400	Normal
@@ -325,7 +356,9 @@ table {
 600	Semi Bold (Demi Bold)
 700	Bold
 800	Extra Bold (Ultra Bold)
-900	Black (Heavy) */
+900	Black (Heavy) 
+
+*/
 
 .strike {
   text-decoration: line-through;
