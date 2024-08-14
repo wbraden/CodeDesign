@@ -1,6 +1,6 @@
 const browseTileTemplate = document.createElement("template");
 browseTileTemplate.innerHTML = `
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <a href="" class="browse-tile-link">
         <div class="browse-tile">
             <div class="media">
