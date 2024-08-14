@@ -1,6 +1,6 @@
 const gridTemplate = document.createElement("template");
 gridTemplate.innerHTML = `
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="css/main.css">
   <section>
     <div class="container">
       <div class="wrapper"></div>

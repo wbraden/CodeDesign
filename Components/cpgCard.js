@@ -1,6 +1,6 @@
 const cpgCardTemplate = document.createElement("template");
 cpgCardTemplate.innerHTML = `
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <div class="box cpg-card ">       
         <div class="content">

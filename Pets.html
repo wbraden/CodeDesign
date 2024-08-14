@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <base href="../../../">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">  
@@ -18,15 +18,20 @@
     ></custom-navbar>
 
     <main>
-      <!-- TITLE -->
-      <div class="container greetings">
-        <h1 class="typography headline xl">Dogs</h1>
+
+
+    <!-- TITLE -->
+    <div class="container greetings">
+        <h1 class="typography headline xl">Pets</h1>
       </div>
-          
-      <custom-grid
-        data-source="../data/dogs.json">
-      </custom-grid>
-               
+        
+    <custom-grid
+        headline="Top Categories"
+        subheadline="Browse our selection"
+        data-source="data/dogs.json"
+        ></custom-grid>
+            
+        
     </main>
 
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>

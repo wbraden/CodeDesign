@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="../../">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="theme--blue retailer">
     <custom-navbar
@@ -74,7 +73,7 @@
               <browse-tile
                 aspect="4-3"
                 promotion
-                image="../assets/category-dog.png"
+                image="assets/category-dog.png"
                 alt="Retailer 1"
                 link="/pets/dogs.html"
               >
@@ -86,7 +85,7 @@
             <div class="swiper-slide">
               <browse-tile
                 aspect="4-3"
-                image="../assets/category-cat.png"
+                image="assets/category-cat.png"
                 alt="Retailer 1"
                 link="/pets/cats.html"
               >
@@ -97,7 +96,7 @@
               <browse-tile
                 aspect="4-3"
                 link="/retailer.html"
-                image="../assets/category-birds.png"
+                image="assets/category-birds.png"
                 alt="Retailer 1"
               >
                 <span slot="label">Birds</span>
@@ -106,7 +105,7 @@
             <div class="swiper-slide">
               <browse-tile
                 aspect="4-3"
-                image="../assets/category-fish.png"
+                image="assets/category-fish.png"
                 alt="Retailer 1"
               >
                 <span slot="label">Fish</span>
@@ -115,7 +114,7 @@
             <div class="swiper-slide">
               <browse-tile
                 aspect="4-3"
-                image="../assets/category-reptile.png"
+                image="assets/category-reptile.png"
                 alt="Retailer 1"
               >
                 <span slot="label">Reptiles</span>
@@ -124,7 +123,7 @@
             <div class="swiper-slide">
               <browse-tile
                 aspect="4-3"
-                image="../assets/category-small-animals.png"
+                image="assets/category-small-animals.png"
                 alt="Retailer 1"
               >
                 <span slot="label">Small animals</span>
@@ -139,11 +138,20 @@
     <custom-carousel
       headline="Dogs"
       subheadline="Description"
-      data-source="../data/dogs.json"
+      data-source="data/dogs.json"
       component-type="product-card"
     >
     </custom-carousel>
 
+    <!-- CATS -->
+    <custom-carousel
+      header-image="assets/kitty-corner.png"
+      headline="Cats"      
+      subheadline="Description"
+      data-source="data/cats.json"
+      component-type="product-card"
+    >
+    </custom-carousel>
 
     <!-- CPG -->
     <section>
@@ -186,7 +194,7 @@
           </section-header>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <cpg-card image="../assets/dogfood.png">
+              <cpg-card image="assets/dogfood.png">
                 <span slot="headline"
                   >Quality ingredients your dog deserves</span
                 >
@@ -196,7 +204,7 @@
             </div>
             <!-- Repeat browse-tile elements for more slides -->
             <div class="swiper-slide">
-              <cpg-card image="../assets/method.png">
+              <cpg-card image="assets/method.png">
                 <span slot="headline"
                   >Quality ingredients your dog deserves</span
                 >
@@ -205,7 +213,7 @@
               </cpg-card>
             </div>
             <div class="swiper-slide">
-              <cpg-card image="../assets/dogfood.png">
+              <cpg-card image="assets/dogfood.png">
                 <span slot="headline"
                   >Quality ingredients your dog deserves</span
                 >
@@ -214,7 +222,7 @@
               </cpg-card>
             </div>
             <div class="swiper-slide">
-              <cpg-card image="../assets/method.png">
+              <cpg-card image="assets/method.png">
                 <span slot="headline"
                   >Quality ingredients your dog deserves</span
                 >
@@ -223,7 +231,7 @@
               </cpg-card>
             </div>
             <div class="swiper-slide">
-              <cpg-card image="../assets/dogfood.png">
+              <cpg-card image="assets/dogfood.png">
                 <span slot="headline"
                   >Quality ingredients your dog deserves</span
                 >
@@ -232,7 +240,7 @@
               </cpg-card>
             </div>
             <div class="swiper-slide">
-              <cpg-card image="../assets/dogfood.png">
+              <cpg-card image="assets/dogfood.png">
                 <span slot="headline"
                   >Quality ingredients your dog deserves</span
                 >
@@ -241,7 +249,7 @@
               </cpg-card>
             </div>
             <div class="swiper-slide">
-              <cpg-card image="../assets/dogfood.png">
+              <cpg-card image="assets/dogfood.png">
                 <span slot="headline"
                   >Quality ingredients your dog deserves</span
                 >
@@ -254,13 +262,11 @@
       </div>
     </section>
 
-
-
     <!-- Image header and color bg -->
     <section class="colorize-blue has-background">
       <div class="container">
         <div class="swiper wb-swiper-5">
-          <section-header alt="Target" header-image="../assets/kitty-corner.png">
+          <section-header alt="Target" header-image="assets/kitty-corner.png">
             <!-- <span slot="subheadline"
               >All the ingredients to create a soothing smoothie on this hot,
               hot, hot day.</span
@@ -362,7 +368,7 @@
               </product-card>
             </div>
             <div class="swiper-slide">
-              <product-card image="../assets/placeholder-product.png">
+              <product-card image="assets/placeholder-product.png">
                 <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
@@ -371,7 +377,7 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card image="../assets/placeholder-product.png">
+              <product-card image="assets/placeholder-product.png">
                 <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
@@ -380,7 +386,7 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card image="../assets/placeholder-product.png">
+              <product-card image="assets/placeholder-product.png">
                 <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
@@ -389,7 +395,7 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card image="../assets/placeholder-product.png">
+              <product-card image="assets/placeholder-product.png">
                 <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
@@ -398,7 +404,7 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card image="../assets/placeholder-product.png">
+              <product-card image="assets/placeholder-product.png">
                 <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
@@ -407,7 +413,7 @@
             </div>
 
             <div class="swiper-slide">
-              <product-card image="../assets/placeholder-product.png">
+              <product-card image="assets/placeholder-product.png">
                 <span slot="productName">Product Name</span>
                 <span slot="line2">1 ct</span>
 
@@ -418,20 +424,6 @@
         </div>
       </div>
     </section>
-
-
-    <!-- CATS -->
-    <custom-carousel
-      header-image="../assets/kitty-corner.png"
-      headline="Cats"      
-      subheadline="Description"
-      data-source="../data/cats.json"
-      component-type="product-card"
-    >
-    </custom-carousel>
-
-
-
 
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
