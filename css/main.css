@@ -199,7 +199,7 @@ table {
   --color-text-primary: #302638;
   --color-text-secondary: #6b6471;
   --color-text-primary-inverse: #ffffff;
-  --color-text-secondary-inverse: #908d96;
+  --color-text-secondary-inverse: #dfdce3;
   --color-text-promotion: #c63e15;
   --color-background-primary: #ffffff;
   --color-background-secondary: #f6f5f6;
@@ -299,20 +299,14 @@ table {
 
 .colorize-red .container {
   background-color: var(--color-accent-red-bg-soft);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-radius: 16px;
+
 }
 
 .theme--blue .colorize .container,
 .colorize-blue .container {
   background-color: var(--color-accent-blue-bg-soft);
   background-color: #D4E6FD;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-radius: .5rem;
+
 }
 
 
@@ -394,17 +388,15 @@ table {
 }
 
 .typography.headline {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .typography.headline.lg {
   font-size: 18px;
-  font-weight: 700;
 }
 
 .typography.headline.xl {
   font-size: 24px;
-  font-weight: 700;
 }
 
 .typography.subheadline.lg {
@@ -598,15 +590,24 @@ body {
 @media (min-width: 1280px) and (max-width: 1439px) {
   .container {
     max-width: 1280px;
-    padding: 0 3rem; /* Desktop padding */
+    padding: 0 2rem; /* Desktop padding */
   }
 }
+
 
 /* Larger than Desktop */
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px; /* Adjust as needed for larger screens */
-    padding: 0 3rem; /* Desktop padding */
+    padding: 0 2rem; /* Desktop padding */
+  }
+}
+
+/* Larger than Desktop */
+@media (min-width: 1880px) {
+  .container {
+    max-width: 1880px; /* Adjust as needed for larger screens */
+    padding: 0 2rem; /* Desktop padding */
   }
 }
 .icon.sm {
@@ -713,9 +714,28 @@ section {
   container-name: section;
 }
 section.has-background {
+  --color-text-secondary: var(--color-text-primary);
+}
+section.has-background .container {
   padding: 2rem 0;
   margin-bottom: 2rem;
+  /* padding: 3rem; */
 }
+@media (min-width: 1280px) {
+  section.has-background .container {    
+    padding:2rem;
+    border-radius: 2rem;
+  }
+}
+
+
+
+@media (min-width: 1880px) {
+  section.has-background .container {
+    border-radius: 2rem;
+  }
+}
+
 section-header img {
   max-width: 375px;
   width: 100%;
@@ -727,6 +747,7 @@ section-header img {
   width: 100%;
   margin-bottom: 1rem;
   gap: var(--gap);
+  flex-wrap: wrap;
 }
 
 .section-header button,

@@ -1,13 +1,17 @@
 const template = document.createElement("template");
 template.innerHTML = `
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="../css/main.css">
 <div class="navbar-container">
   <div class="container">    
     <div class="navbar">
       <div class="navbar-left">
         <button class="menu-button">☰</button>
         <a class="logo-link" href="../"><img src="" alt="Shipt Logo" class="logo"></a>
+<<<<<<< Updated upstream
         <a class="location-link"><span class="location"></span><img class="icon md" src="assets/icons/caret-down.svg" alt="Icon description"></a>
+=======
+        <a class="location-link"><span class="location"></span><img class="icon md" src="../assets/icons/caret-down.svg" alt="Icon description"></a>
+>>>>>>> Stashed changes
       </div>
       <div class="navbar-center">
         <input type="text" class="search-input" placeholder="What can we help you find?">
@@ -28,7 +32,7 @@ template.innerHTML = `
           <img src="" alt="Target Logo" class="store-logo">
           <span class="store-text"></span>
         </div>
-        <img class="icon md" src="assets/icons/caret-down.svg" alt="Icon description">
+        <img class="icon md" src="../assets/icons/caret-down.svg" alt="Icon description">
       </div>
       <a href="#" class="link">Buy Again</a>
       <a href="#" class="link">Deals</a>
