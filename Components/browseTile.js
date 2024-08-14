@@ -9,7 +9,8 @@ browseTileTemplate.innerHTML = `
                     alt=""
                     class="browse-tile-image"
                 />
-                <div class="overlay"></div>
+                  <div class="overlay"></div>
+
             </div>
             <div class="content">
                 <div class="browse-tile-details">
@@ -33,63 +34,28 @@ class BrowseTile extends HTMLElement {
   }
 
   connectedCallback() {
-    const imageSrc = this.getAttribute("image");
-    const videoSrc = this.getAttribute("video");
-    const link = this.getAttribute("link");
-
-    const imageElement = this.shadowRoot.querySelector(".browse-tile-image");
-
-    if (imageSrc) {
-      imageElement.src = imageSrc;
+    if (this.getAttribute("image")) {
+      this.shadowRoot.querySelector(".browse-tile-image").src =
+        this.getAttribute("image");
     }
-
-    if (link) {
-      this.shadowRoot.querySelector(".browse-tile-link").href = link;
+    if (this.getAttribute("link")) {
+      this.shadowRoot.querySelector(".browse-tile-link").href =
+        this.getAttribute("link");
     }
-
-    if (videoSrc) {
-      this.addVideoElement(videoSrc, imageElement);
-    }
-
     this.setAspectRatio();
-  }
-
-  addVideoElement(videoSrc, imageElement) {
-    const videoElement = document.createElement('video');
-    videoElement.src = videoSrc;
-    videoElement.classList.add('browse-tile-video');
-    videoElement.muted = true;
-    videoElement.loop = true;
-    videoElement.style.display = 'none';
-
-    this.shadowRoot.querySelector(".media").appendChild(videoElement);
-
-    // Add hover events for playing and pausing the video
-    this.shadowRoot.querySelector(".media").addEventListener("mouseenter", () => {
-      imageElement.style.display = "none"; // Hide the image
-      videoElement.style.display = "block"; // Show the video
-      videoElement.play();
-    });
-
-    this.shadowRoot.querySelector(".media").addEventListener("mouseleave", () => {
-      videoElement.pause();
-      videoElement.currentTime = 0;
-      videoElement.style.display = "none"; // Hide the video
-      imageElement.style.display = "block"; // Show the image
-    });
   }
 
   setAspectRatio() {
     const aspect = this.getAttribute("aspect") || "16-9";
     const mediaElement = this.shadowRoot.querySelector(".media");
-    mediaElement.classList.remove("ar169", "ar43", "ar11", "ar916");
+    mediaElement.classList.remove("ar169", "ar43", "ar11");
 
     switch (aspect) {
       case "4-3":
         mediaElement.classList.add("ar43");
         break;
       case "9-16":
-        mediaElement.classList.add("ar916");
+        mediaElement.classList.add("ar43");
         break;
       case "1-1":
         mediaElement.classList.add("ar11");

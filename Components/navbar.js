@@ -1,13 +1,13 @@
 const template = document.createElement("template");
 template.innerHTML = `
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="css/main.css">
 <div class="navbar-container">
   <div class="container">    
     <div class="navbar">
       <div class="navbar-left">
         <button class="menu-button">☰</button>
-        <a class="logo-link" href="../"><img src="" alt="Shipt Logo" class="logo"></a>
-        <a class="location-link"><span class="location"></span><img class="icon md" src="../assets/icons/caret-down.svg" alt="Icon description"></a>
+        <a class="logo-link" href="./"><img src="" alt="Shipt Logo" class="logo"></a>
+        <a class="location-link"><span class="location"></span><img class="icon md" src="assets/icons/caret-down.svg" alt="Icon description"></a>
       </div>
       <div class="navbar-center">
         <input type="text" class="search-input" placeholder="What can we help you find?">
@@ -21,14 +21,14 @@ template.innerHTML = `
       </div>
     </div>
   </div>
-  <div class="container quicklinks-retailer">
+  <div class="container quicklinks-">
     <div class="navbar-links">
       <div class="navbar-link">
         <div class="store-group">
           <img src="" alt="Target Logo" class="store-logo">
           <span class="store-text"></span>
         </div>
-        <img class="icon md" src="../assets/icons/caret-down.svg" alt="Icon description">
+        <img class="icon md" src="assets/icons/caret-down.svg" alt="Icon description">
       </div>
       <a href="#" class="link">Buy Again</a>
       <a href="#" class="link">Deals</a>
@@ -80,12 +80,6 @@ class CustomNavbar extends HTMLElement {
       this.shadowRoot.querySelector(".store-text").textContent = storeText;
     } else {
       storeGroup.style.display = "none";
-    }
-
-    // Conditionally display the navbar links row if the "retailer" attribute is present
-    const quicklinksRetailer = this.shadowRoot.querySelector(".quicklinks-retailer");
-    if (!this.hasAttribute("retailer")) {
-      quicklinksRetailer.style.display = "none";
     }
   }
 }
