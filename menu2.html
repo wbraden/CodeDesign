@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="theme--blue retailer">
+    <custom-navbar
+      logo-src="https://object-storage.shipt.com/web/assets/headerLogo-new.svg?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+      logo-alt="Shipt"
+      location="201 3rd St 94132"
+      store-logo-src="https://object-storage.shipt.com/stores/27-061819185725_4aa474376b672e5e20d95db190d54ca5.png?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=64"
+      store-logo-alt="Target"
+      store-text="Target"
+      cart-count="21"
+    ></custom-navbar>
+  
+
+    <div
+      class="options-menu"
+      tabindex="-1"
+      style="
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        visibility: visible;
+        outline: none;
+        transform: translate(0, 60px);
+        will-change: transform;
+      "
+    >
+      <div class="options-menu-headline typography headline sm tcp lb-em">
+        Choose a store
+      </div>
+      <div class="options-menu-subheadline typography body sm tcs">
+        Frequently shopped at:
+      </div>
+      <div class="option">
+        <div class="label">Paste</div>
+      </div>
+      <div class="options-menu-subheadline typography body sm tcs">
+        Stores near you:
+      </div>
+      <div class="option">
+        <div class="label">Copy</div>
+      </div>
+      <div class="option">
+        <div class="label">Paste</div>
+      </div>
+    </div>
+
+     
+     
+
+     
+     
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Components/browseTile.js"></script>
+    <script src="Components/productCard.js"></script>
+    <script src="Components/sectionHeader.js"></script>
+    <script src="Components/navbar.js"></script>
+    <script src="Components/cpgCard.js"></script>
+    <script src="Components/carousel.js"></script>
+    <script src="Components/grid.js"></script>
+
+    <script>
+      document.querySelectorAll(".filter-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          // Toggle dropdown or perform another action
+          alert("Clicked on " + this.textContent.trim());
+        });
+      });
+    </script>
+<!-- 
+    <script>
+       document.getElementById('menuButton').addEventListener('click', function(event) {
+    const button = this;
+    const menu = document.getElementById('optionsMenu');
+
+    // Get button's position and size
+    const rect = button.getBoundingClientRect();
+
+    // Position the menu below the button, centered horizontally
+    menu.style.left = `${rect.left + window.scrollX + rect.width / 2 - menu.offsetWidth / 2}px`;
+    menu.style.top = `${rect.bottom + window.scrollY + 8}px`; // 8px below the button
+
+    // Toggle menu visibility
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+
+    // Prevent any other click event from closing the menu
+    event.stopPropagation();
+});
+
+// Close the menu if clicking outside
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('optionsMenu');
+    if (!menu.contains(event.target) && event.target.id !== 'menuButton') {
+        menu.style.display = 'none';
+    }
+});
+
+    </script> -->
+  </body>
+</html>

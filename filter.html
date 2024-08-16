@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="theme--blue retailer">
+    <custom-navbar
+      logo-src="https://object-storage.shipt.com/web/assets/headerLogo-new.svg?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=256"
+      logo-alt="Shipt"
+      location="201 3rd St 94132"
+      store-logo-src="https://object-storage.shipt.com/stores/27-061819185725_4aa474376b672e5e20d95db190d54ca5.png?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=64"
+      store-logo-alt="Target"
+      store-text="Target"
+      cart-count="21"
+    ></custom-navbar>
+
+    <!-- FILTER BAR -->
+    <header class="filter-bar">
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-buttons">
+            <button class="filter-button hasDropdown">
+              Price
+              <img
+                class="icon md"
+                src="assets/icons/caret-down.svg"
+                alt="Icon description"
+              />
+            </button>
+            <span class="separator"></span>
+            <button class="filter-button">Buy again</button>
+            <button class="filter-button">Deals</button>
+            <button class="filter-button">Produce</button>
+            <button class="filter-button">Snacks and Candy</button>
+            <button class="filter-button">Meat and Seafood</button>
+          </div>          
+        <div class="filter-more">
+          <button class="filter-button hasDropdown">
+            Filters
+            <img
+              class="icon md"
+              src="assets/icons/caret-down.svg"
+              alt="Icon description"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HEADER IMAGE -->
+    <div class="container">
+      <img src="assets/pet-header.png" alt="" class="slim-header" />
+    </div>
+
+    <!-- TITLE -->
+    <div class="container greetings">
+      <h1 class="typography headline xl">Pets</h1>
+    </div>
+
+    <!-- placeholder -->
+    <custom-grid
+      header-image="assets/kitty-corner.png"
+      headline="placeholder"
+      subheadline="Description"
+      data-source="data/placeholder.json"
+      component-type="product-card"
+    >
+    </custom-grid>
+
+
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Components/browseTile.js"></script>
+    <script src="Components/productCard.js"></script>
+    <script src="Components/sectionHeader.js"></script>
+    <script src="Components/navbar.js"></script>
+    <script src="Components/cpgCard.js"></script>
+    <script src="Components/carousel.js"></script>
+    <script src="Components/grid.js"></script>
+
+    <script>
+      document.querySelectorAll(".filter-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          // Toggle dropdown or perform another action
+          alert("Clicked on " + this.textContent.trim());
+        });
+      });
+    </script>
+  </body>
+</html>

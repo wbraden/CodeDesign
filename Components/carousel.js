@@ -103,8 +103,9 @@ class CustomCarousel extends HTMLElement {
             },
             breakpoints: {
                 480: { slidesPerView: 3.25, slidesPerGroup: 3.25, freeMode: true },
-                768: { slidesPerView: 5, slidesPerGroup: 5, freeMode: true },
-                1280: { slidesPerView: 5, slidesPerGroup: 5, freeMode: false },
+                768: { slidesPerView: 4, slidesPerGroup: 4, freeMode: true },
+                1024: { slidesPerView: 5, slidesPerGroup: 5, freeMode: true },
+                1280: { slidesPerView: 6, slidesPerGroup: 6, freeMode: false },
                 1440: { slidesPerView: 7, slidesPerGroup: 7, freeMode: false },
                 1880: { slidesPerView: 8, slidesPerGroup: 8, freeMode: false },
             },

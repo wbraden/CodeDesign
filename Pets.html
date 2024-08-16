@@ -418,7 +418,7 @@
       header-image="assets/kitty-corner.png"
       headline="Cats"      
       subheadline="Description"
-      data-source="datacats.json"
+      data-source="data/cats.json"
       component-type="product-card"
     >
     </custom-carousel>
@@ -436,7 +436,7 @@
     <script src="Components/carousel.js"></script>
 
     <script>
-      // browse tiles
+      // category browse tiles
       document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".wb-swiper-1", {
           slidesPerView: 2.1,
@@ -444,10 +444,11 @@
           spaceBetween: 8,
           breakpoints: {
             480: { slidesPerView: 3.25, slidesPerGroup: 3.25 },
-            768: { slidesPerView: 6.25, slidesPerGroup: 6.25 },
-            1280: { slidesPerView: 8, slidesPerGroup: 8 },
-            1440: { slidesPerView: 10, slidesPerGroup: 10 },
-            1880: { slidesPerView: 12, slidesPerGroup: 12 },
+            768: { slidesPerView: 4.25, slidesPerGroup: 4.25 },
+            1024: { slidesPerView: 5, slidesPerGroup: 5 },
+            1280: { slidesPerView: 6, slidesPerGroup: 6 },
+            1440: { slidesPerView: 6, slidesPerGroup: 6 },
+            1880: { slidesPerView: 8, slidesPerGroup: 8 },
           },
           navigation: { nextEl: ".wb-next-1", prevEl: ".wb-prev-1" },
         });
@@ -529,7 +530,7 @@
         var swiper = new Swiper(".wb-swiper-4", {
           slidesPerView: 1.1,
           freeMode: true,
-          spaceBetween: 8,
+          spaceBetween: 8,        
           breakpoints: {
             480: { slidesPerView: 1.1, slidesPerGroup: 1.5 },
             768: { slidesPerView: 2.25, slidesPerGroup: 2.25 },
